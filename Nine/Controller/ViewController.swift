@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapboxMaps
 
 class ViewController: UIViewController {
 
