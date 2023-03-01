@@ -1,24 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BOH-fL-fm0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="doh-6w-YB6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BOH-fL-fm0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u9f-cT-cYe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dDG-53-qez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jc-GL-QTn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12.977099236641221" y="3.5211267605633805"/>
+        </scene>
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Nine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M71-2r-UQZ"/>
+                    <connections>
+                        <segue destination="4Ns-Sr-Zoi" kind="show" identifier="goToAbout" id="YK3-bc-IDd"/>
+                        <segue destination="CWS-7I-62P" kind="show" identifier="goToList" id="o1Q-K5-NBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="939.69465648854953" y="3.5211267605633805"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="wtE-EW-z3Y">
+            <objects>
+                <viewController id="4Ns-Sr-Zoi" customClass="AboutViewController" customModule="Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezZ-ig-CMh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mf8-a1-daO">
+                                <rect key="frame" x="0.0" y="104" width="393" height="714"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nine-flower-about-page" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-PK-J9W">
+                                        <rect key="frame" x="132.66666666666666" y="0.0" width="127.99999999999997" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="jmi-4e-Pn1"/>
+                                            <constraint firstAttribute="height" constant="128" id="oWm-KD-Nt3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9F-BM-cU0" userLabel="Label View">
+                                        <rect key="frame" x="0.0" y="134" width="393" height="450"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-fg-lfq">
+                                                <rect key="frame" x="16" y="8" width="360" height="304.33333333333331"/>
+                                                <mutableString key="text">The name 'nine' pays homage to the nine established Chinatowns within New York City. This is a passion project that captures our personal experience living in one of the most densely populated cities in the world as young Asian Americans. We recognize the common effort to rediscover our cultural identity through traditional cuisines and services, all the while contributing to the growth of our community. With that in mind, we've curated 35 of our favorite Asian American-owned businesses to support now and always. The current list is by no means exhaustive, you are welcomed to submit your own locations to our online database for a chance to be featured. We stand with the AAPI communities to fight against hate crimes during the time of COVID-19. Please consider donating to these NYC-based organizations.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LdV-fg-lfq" firstAttribute="top" secondItem="W9F-BM-cU0" secondAttribute="top" constant="8" id="Ubq-ZO-Evg"/>
+                                            <constraint firstAttribute="trailing" secondItem="LdV-fg-lfq" secondAttribute="trailing" constant="17" id="lLP-bc-fsO"/>
+                                            <constraint firstItem="LdV-fg-lfq" firstAttribute="leading" secondItem="W9F-BM-cU0" secondAttribute="leading" constant="16" id="rrN-wp-vOy"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-0C-4RK" userLabel="Button Stack View">
+                                        <rect key="frame" x="74" y="590" width="245" height="124"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-S6-Bcm" userLabel="Support Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="245" height="62"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="62" id="s5L-0y-4yS"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="support-us-button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-Zb-pUS">
+                                                <rect key="frame" x="0.0" y="62" width="245" height="62"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="62" id="DB6-MV-oMs"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="report-bug-button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="W9F-BM-cU0" secondAttribute="trailing" id="1rq-iD-6Yr"/>
+                                    <constraint firstItem="LkI-0C-4RK" firstAttribute="top" secondItem="W9F-BM-cU0" secondAttribute="bottom" constant="6" id="7cO-Lq-2DF"/>
+                                    <constraint firstItem="W9F-BM-cU0" firstAttribute="leading" secondItem="Mf8-a1-daO" secondAttribute="leading" id="ByM-tz-oD3"/>
+                                    <constraint firstItem="W9F-BM-cU0" firstAttribute="top" secondItem="VIt-PK-J9W" secondAttribute="bottom" constant="6" id="hsO-NR-j0E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QhR-WL-zjE"/>
+                        <color key="backgroundColor" name="NineGrey"/>
+                        <constraints>
+                            <constraint firstItem="Mf8-a1-daO" firstAttribute="leading" secondItem="QhR-WL-zjE" secondAttribute="leading" id="8Ik-Q5-GCn"/>
+                            <constraint firstItem="Mf8-a1-daO" firstAttribute="top" secondItem="QhR-WL-zjE" secondAttribute="top" constant="1" id="pcH-bO-9yh"/>
+                            <constraint firstItem="Mf8-a1-daO" firstAttribute="bottom" secondItem="QhR-WL-zjE" secondAttribute="bottom" id="qfU-2Z-uHo"/>
+                            <constraint firstItem="Mf8-a1-daO" firstAttribute="trailing" secondItem="QhR-WL-zjE" secondAttribute="trailing" id="sCI-mh-MxF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d0z-8O-aad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P47-2M-RF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.4045801526718" y="-201.40845070422537"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="itv-gA-25T">
+            <objects>
+                <viewController id="CWS-7I-62P" customClass="ListViewController" customModule="Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9fG-dd-JSM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fZH-F7-kl9">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GG5-Cw-9Jr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7xe-Vs-bPr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpJ-g1-NrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="498"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nine-flower-about-page" width="381" height="381"/>
+        <image name="report-bug-button" width="221" height="48"/>
+        <image name="support-us-button" width="221" height="48"/>
+        <namedColor name="NineGrey">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
