@@ -71,7 +71,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-fg-lfq">
                                                 <rect key="frame" x="16" y="8" width="360" height="304.33333333333331"/>
-                                                <mutableString key="text">The name 'nine' pays homage to the nine established Chinatowns within New York City. This is a passion project that captures our personal experience living in one of the most densely populated cities in the world as young Asian Americans. We recognize the common effort to rediscover our cultural identity through traditional cuisines and services, all the while contributing to the growth of our community. With that in mind, we've curated 35 of our favorite Asian American-owned businesses to support now and always. The current list is by no means exhaustive, you are welcomed to submit your own locations to our online database for a chance to be featured. We stand with the AAPI communities to fight against hate crimes during the time of COVID-19. Please consider donating to these NYC-based organizations.</mutableString>
+                                                <string key="text">The name 'nine' pays homage to the nine established Chinatowns within New York City. This is a passion project that captures our personal experience living in one of the most densely populated cities in the world as young Asian Americans. We recognize the common effort to rediscover our cultural identity through traditional cuisines and services, all the while contributing to the growth of our community. With that in mind, we've curated 35 of our favorite Asian American-owned businesses to support now and always. The current list is by no means exhaustive, you are welcomed to submit your own locations to our online database for a chance to be featured. We stand with the AAPI communities to fight against hate crimes during the time of COVID-19. Please consider donating to these NYC-based organizations.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -84,23 +84,23 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-0C-4RK" userLabel="Button Stack View">
-                                        <rect key="frame" x="74" y="590" width="245" height="124"/>
+                                        <rect key="frame" x="86" y="590" width="221" height="124"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-S6-Bcm" userLabel="Support Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="245" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="221" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="s5L-0y-4yS"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="support-us-button"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="support-us-button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-Zb-pUS">
-                                                <rect key="frame" x="0.0" y="62" width="245" height="62"/>
+                                                <rect key="frame" x="0.0" y="62" width="221" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="DB6-MV-oMs"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="report-bug-button"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="report-bug-button"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -157,7 +157,7 @@
         <image name="report-bug-button" width="221" height="48"/>
         <image name="support-us-button" width="221" height="48"/>
         <namedColor name="NineGrey">
-            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
