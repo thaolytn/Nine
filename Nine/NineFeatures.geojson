@@ -1,0 +1,517 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "180 Duane Street, New York, New York 10013, United States",
+        "category": "retail",
+        "name": "180 The Store"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.00999,
+          40.71712
+        ],
+        "type": "Point"
+      },
+      "id": "address.1151876715451108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "202 Centre Street, New York, New York 10013, United States",
+        "category": "restaurant",
+        "name": "Jing Fong "
+      },
+      "geometry": {
+        "coordinates": [
+          -73.999026,
+          40.71861
+        ],
+        "type": "Point"
+      },
+      "id": "address.1177275781565682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "79 Chrystie Street, New York, New York 10002, United States",
+        "category": "restaurant",
+        "name": "Wah Fung Fast Food"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99451,
+          40.71733
+        ],
+        "type": "Point"
+      },
+      "id": "address.1193662015602376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "310 Grand Street, Brooklyn, New York 11211, United States",
+        "category": "retail",
+        "name": "About Glamour"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.95719,
+          40.712735
+        ],
+        "type": "Point"
+      },
+      "id": "address.1498196644516986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "259 East 10th Street, New York, New York 10009, United States",
+        "category": "drinks",
+        "name": "Lê Phin"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98346,
+          40.728535
+        ],
+        "type": "Point"
+      },
+      "id": "address.172469149332982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "679 Greenwich Street, New York, New York 10014, United States",
+        "category": "restaurant",
+        "name": "Jeju Noodle Bar"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.007305,
+          40.733035
+        ],
+        "type": "Point"
+      },
+      "id": "address.176823820153438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "83 East 7th Street, New York, New York 10003, United States",
+        "category": "retail",
+        "name": "Tokio 7"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.986085,
+          40.727305
+        ],
+        "type": "Point"
+      },
+      "id": "address.276658113947654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "163 Plymouth Street, Brooklyn, New York 11201, United States",
+        "category": "drinks",
+        "name": "Usagi"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98691,
+          40.70382
+        ],
+        "type": "Point"
+      },
+      "id": "address.3136196625452586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "43 East 28th Street, New York, New York 10016, United States",
+        "category": "restaurant",
+        "name": "Atoboy"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98521,
+          40.74405
+        ],
+        "type": "Point"
+      },
+      "id": "address.319123772951110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "22 East 1st Street, New York, New York 10003, United States",
+        "category": "retail",
+        "name": "Nalata Nalata"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99128,
+          40.72458
+        ],
+        "type": "Point"
+      },
+      "id": "address.3516000217405146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "85 Avenue a, New York, New York 10009, United States",
+        "category": "restaurant",
+        "name": "Somtum Der"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98437,
+          40.725285
+        ],
+        "type": "Point"
+      },
+      "id": "address.3905051136264558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "28 Forsyth Street, New York, New York 10002, United States",
+        "category": "retail",
+        "name": "HAPPY99"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.994235,
+          40.71523
+        ],
+        "type": "Point"
+      },
+      "id": "address.3928092371292170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "6301 8th Avenue, Brooklyn, New York 11220, United States",
+        "category": "grocery",
+        "name": "Fei Long Market"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.01141,
+          40.633405
+        ],
+        "type": "Point"
+      },
+      "id": "address.407849664996962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "58 West 56th Street, New York, New York 10019, United States",
+        "category": "restaurant",
+        "name": "Bengal Tiger"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.977095,
+          40.763215
+        ],
+        "type": "Point"
+      },
+      "id": "address.4340329229995216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "17 East 31st Street, New York, New York 10016, United States",
+        "category": "restaurant",
+        "name": "Her Name Is Han"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98477,
+          40.746215
+        ],
+        "type": "Point"
+      },
+      "id": "address.4364238981110670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "76-04 Woodside Avenue, Queens, New York 11373, United States",
+        "category": "restaurant",
+        "name": "Zaab Zaab"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.88865,
+          40.74331
+        ],
+        "type": "Point"
+      },
+      "id": "address.4643855089435526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "114 East 1st Street, New York, New York 10009, United States",
+        "category": "grocery",
+        "name": "Punjabi Deli"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.986655,
+          40.722705
+        ],
+        "type": "Point"
+      },
+      "id": "address.5158031326050126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "63 West Street, Brooklyn, New York 11222, United States",
+        "category": "bookstore",
+        "name": "Yoseka Stationery"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.95917,
+          40.72853
+        ],
+        "type": "Point"
+      },
+      "id": "address.5329050984038754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "44 Mulberry Street, New York, New York 10013, United States",
+        "category": "bookstore",
+        "name": "Yu & Me Books"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99955,
+          40.71496
+        ],
+        "type": "Point"
+      },
+      "id": "address.5479218497370950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "159 Graham Avenue, Brooklyn, New York 11206, United States",
+        "category": "restaurant",
+        "name": "Win Son"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.94344,
+          40.707455
+        ],
+        "type": "Point"
+      },
+      "id": "address.5508453910224504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "170 Montrose Avenue, Brooklyn, New York 11206, United States",
+        "category": "grocery",
+        "name": "Yun Hai Shop"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.94254,
+          40.707215
+        ],
+        "type": "Point"
+      },
+      "id": "address.5828459061618520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "104 Mosco Street, New York, New York 10013, United States",
+        "category": "grocery",
+        "name": "Bangkok Center Grocery"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99938,
+          40.71452
+        ],
+        "type": "Point"
+      },
+      "id": "address.5921749980108706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "163 West 10th Street, New York, New York 10014, United States",
+        "category": "drinks",
+        "name": "Té Company"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.001915,
+          40.734545
+        ],
+        "type": "Point"
+      },
+      "id": "address.6211532928176066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "404 West 49th Street, New York, New York 10019, United States",
+        "category": "restaurant",
+        "name": "LumLum"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98989,
+          40.76296
+        ],
+        "type": "Point"
+      },
+      "id": "address.6296272290740916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "204 East 13th Street, New York, New York 10003, United States",
+        "category": "restaurant",
+        "name": "Soothr"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98733,
+          40.7323
+        ],
+        "type": "Point"
+      },
+      "id": "address.6467350208917772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "157 Hester Street, New York, New York 10013, United States",
+        "category": "grocery",
+        "name": "Hong Kong Supermarket"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99604,
+          40.71758
+        ],
+        "type": "Point"
+      },
+      "id": "address.6778059050767568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "121 Bowery, New York, New York 10002, United States",
+        "category": "grocery",
+        "name": "Tân Tín Hưng"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.994735,
+          40.71806
+        ],
+        "type": "Point"
+      },
+      "id": "address.6918013298139764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "564 Woodward Avenue, Queens, New York 11385, United States",
+        "name": "Lichen",
+        "category": "retail"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.908965,
+          40.706635
+        ],
+        "type": "Point"
+      },
+      "id": "address.6960899842541258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "230 East 9th Street, New York, New York 10003, United States",
+        "category": "drinks",
+        "name": "Cha-An"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98815,
+          40.72937
+        ],
+        "type": "Point"
+      },
+      "id": "address.8043959960997266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "68 Greenpoint Avenue, Brooklyn, New York 11222, United States",
+        "category": "restaurant",
+        "name": "Di An Di"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.95826,
+          40.729635
+        ],
+        "type": "Point"
+      },
+      "id": "address.8663844949822656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "143 Front Street, Brooklyn, New York 11201, United States",
+        "name": "Front General Store",
+        "category": "retail"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98729,
+          40.70253
+        ],
+        "type": "Point"
+      },
+      "id": "address.8784854519781248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "76-03 37th Avenue, Queens, New York 11372, United States",
+        "category": "restaurant",
+        "name": "Lhasa Fast Food"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.88963,
+          40.74931
+        ],
+        "type": "Point"
+      },
+      "id": "address.8876390150310184"
+    }
+  ],
+  "type": "FeatureCollection"
+}

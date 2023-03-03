@@ -8,22 +8,27 @@
 import UIKit
 import MapboxMaps
 import MapboxCoreMaps
-import MapboxCommon_Private
-import MapboxCoreMaps_Private
 
 
 class MapViewController: UIViewController {
 
-    internal var mapView: MapView!
-    internal let STYLE_URL = "mapbox://styles/thaolyngo/ckdq24xor0rv81iqgphyie5qg"
+    private var mapView: MapView!
     
+    private enum Constants {
+        static let STYLE_URL = "mapbox://styles/thaolyngo/ckdq24xor0rv81iqgphyie5qg"
+        static let PUBLIC_TOKEN = "pk.eyJ1IjoidGhhb2x5bmdvIiwiYSI6ImNsZW43ZDNqZTE4cXMzcm5oamU5cXM1eTIifQ.YOrnBSD-avGEriAFfE6X3Q"
+        static let SOURCE_ID = "NINE_FEATURES"
+        static let LAYER_ID = "NINE_SYMBOLS"
+        static let LOCATION_ICON_ID = "NINE_LOCATION_ICON"
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Create a mapView
-        let myResourceOptions = ResourceOptions(accessToken: "pk.eyJ1IjoidGhhb2x5bmdvIiwiYSI6ImNsZW43ZDNqZTE4cXMzcm5oamU5cXM1eTIifQ.YOrnBSD-avGEriAFfE6X3Q")
-        let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, styleURI: StyleURI(rawValue: STYLE_URL))
+        let myResourceOptions = ResourceOptions(accessToken: Constants.PUBLIC_TOKEN)
+        let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, styleURI: StyleURI(rawValue: Constants.STYLE_URL))
         
         mapView = MapView(frame: view.bounds, mapInitOptions: myMapInitOptions)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -75,7 +80,46 @@ class MapViewController: UIViewController {
         view.addSubview(listButton)
         
         
+        
+        mapView.mapboxMap.onNext(event: .mapLoaded) { _ in
+            self.prepareStyle()
+        }
+        
     }
+    
+    
+    //MARK: - Utility Methods
+    
+    private func prepareStyle() {
+        
+        let style = mapView.mapboxMap.style
+        try? style.addImage(UIImage(named: "location-icon")!, id: Constants.LOCATION_ICON_ID)
+        
+        // Add GeoJSON data source to the map's style
+        if let geoJSONFileURL = Bundle.main.url(forResource: "NineFeatures", withExtension: "geojson") {
+            var geoJSONSource = GeoJSONSource()
+            geoJSONSource.data = .url(geoJSONFileURL)
+            
+            try! style.addSource(geoJSONSource, id: Constants.SOURCE_ID)
+        }
+        
+        var symbolLayer = SymbolLayer(id: Constants.LAYER_ID)
+        symbolLayer.source = Constants.SOURCE_ID
+        
+        symbolLayer.iconImage = .constant(.name(Constants.LOCATION_ICON_ID))
+        symbolLayer.iconAnchor = .constant(.bottom)
+        symbolLayer.iconAllowOverlap = .constant(false)
+        
+        symbolLayer.textField = .expression(Exp(.get) { "name" })
+        symbolLayer.textSize = .constant(12)
+        symbolLayer.textColor = .constant(.init(UIColor.white))
+        symbolLayer.textAnchor = .constant(.top)
+        
+        try! style.addLayer(symbolLayer)
+        
+        
+    }
+    
     
     
     
