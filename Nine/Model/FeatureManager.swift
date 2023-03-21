@@ -26,8 +26,9 @@ struct FeatureManager {
                 let name = feature.properties.name
                 let address = feature.properties.address
                 let category = feature.properties.category
+                let nationality = feature.properties.nationality
                 
-                let featureModel = FeatureModel(name: name, address: address, category: category)
+                let featureModel = FeatureModel(name: name, address: address, category: category, nationality: nationality)
                 features.append(featureModel)
             }
             

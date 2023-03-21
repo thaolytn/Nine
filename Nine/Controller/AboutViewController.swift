@@ -10,4 +10,13 @@ import MapboxMaps
 
 class AboutViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        let backArrowImage = UIImage(named: "back-button-white")
+        navigationController?.navigationBar.backIndicatorImage = backArrowImage
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = backArrowImage
+        navigationController?.navigationBar.tintColor = .white
+    }
 }

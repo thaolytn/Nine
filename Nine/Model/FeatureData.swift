@@ -19,4 +19,5 @@ struct Property : Codable {
     let name : String
     let address : String
     let category : String
+    let nationality : String
 }

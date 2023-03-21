@@ -5,7 +5,8 @@
       "properties": {
         "address": "180 Duane Street, New York, New York 10013, United States",
         "category": "retail",
-        "name": "180 The Store"
+        "name": "180 The Store",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -21,7 +22,8 @@
       "properties": {
         "address": "202 Centre Street, New York, New York 10013, United States",
         "category": "restaurant",
-        "name": "Jing Fong "
+        "name": "Jing Fong ",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -37,7 +39,8 @@
       "properties": {
         "address": "79 Chrystie Street, New York, New York 10002, United States",
         "category": "restaurant",
-        "name": "Wah Fung Fast Food"
+        "name": "Wah Fung Fast Food",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -53,7 +56,8 @@
       "properties": {
         "address": "310 Grand Street, Brooklyn, New York 11211, United States",
         "category": "retail",
-        "name": "About Glamour"
+        "name": "About Glamour",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -69,7 +73,8 @@
       "properties": {
         "address": "259 East 10th Street, New York, New York 10009, United States",
         "category": "drinks",
-        "name": "Lê Phin"
+        "name": "Lê Phin",
+        "nationality": "vietnamese"
       },
       "geometry": {
         "coordinates": [
@@ -85,7 +90,8 @@
       "properties": {
         "address": "679 Greenwich Street, New York, New York 10014, United States",
         "category": "restaurant",
-        "name": "Jeju Noodle Bar"
+        "name": "Jeju Noodle Bar",
+        "nationality": "korean"
       },
       "geometry": {
         "coordinates": [
@@ -101,7 +107,8 @@
       "properties": {
         "address": "83 East 7th Street, New York, New York 10003, United States",
         "category": "retail",
-        "name": "Tokio 7"
+        "name": "Tokio 7",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -117,7 +124,8 @@
       "properties": {
         "address": "163 Plymouth Street, Brooklyn, New York 11201, United States",
         "category": "drinks",
-        "name": "Usagi"
+        "name": "Usagi",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -133,7 +141,8 @@
       "properties": {
         "address": "43 East 28th Street, New York, New York 10016, United States",
         "category": "restaurant",
-        "name": "Atoboy"
+        "name": "Atoboy",
+        "nationality": "korean"
       },
       "geometry": {
         "coordinates": [
@@ -149,7 +158,8 @@
       "properties": {
         "address": "22 East 1st Street, New York, New York 10003, United States",
         "category": "retail",
-        "name": "Nalata Nalata"
+        "name": "Nalata Nalata",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -165,7 +175,8 @@
       "properties": {
         "address": "85 Avenue a, New York, New York 10009, United States",
         "category": "restaurant",
-        "name": "Somtum Der"
+        "name": "Somtum Der",
+        "nationality": "thai"
       },
       "geometry": {
         "coordinates": [
@@ -181,7 +192,8 @@
       "properties": {
         "address": "28 Forsyth Street, New York, New York 10002, United States",
         "category": "retail",
-        "name": "HAPPY99"
+        "name": "HAPPY99",
+        "nationality": "vietnamese"
       },
       "geometry": {
         "coordinates": [
@@ -197,7 +209,8 @@
       "properties": {
         "address": "6301 8th Avenue, Brooklyn, New York 11220, United States",
         "category": "grocery",
-        "name": "Fei Long Market"
+        "name": "Fei Long Market",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -213,7 +226,8 @@
       "properties": {
         "address": "58 West 56th Street, New York, New York 10019, United States",
         "category": "restaurant",
-        "name": "Bengal Tiger"
+        "name": "Bengal Tiger",
+        "nationality": "indian"
       },
       "geometry": {
         "coordinates": [
@@ -229,7 +243,8 @@
       "properties": {
         "address": "17 East 31st Street, New York, New York 10016, United States",
         "category": "restaurant",
-        "name": "Her Name Is Han"
+        "name": "Her Name Is Han",
+        "nationality": "korean"
       },
       "geometry": {
         "coordinates": [
@@ -245,7 +260,8 @@
       "properties": {
         "address": "76-04 Woodside Avenue, Queens, New York 11373, United States",
         "category": "restaurant",
-        "name": "Zaab Zaab"
+        "name": "Zaab Zaab",
+        "nationality": "thai"
       },
       "geometry": {
         "coordinates": [
@@ -261,7 +277,8 @@
       "properties": {
         "address": "114 East 1st Street, New York, New York 10009, United States",
         "category": "grocery",
-        "name": "Punjabi Deli"
+        "name": "Punjabi Deli",
+        "nationality": "punjabi"
       },
       "geometry": {
         "coordinates": [
@@ -277,7 +294,8 @@
       "properties": {
         "address": "63 West Street, Brooklyn, New York 11222, United States",
         "category": "bookstore",
-        "name": "Yoseka Stationery"
+        "name": "Yoseka Stationery",
+        "nationality": "taiwanese"
       },
       "geometry": {
         "coordinates": [
@@ -293,7 +311,8 @@
       "properties": {
         "address": "44 Mulberry Street, New York, New York 10013, United States",
         "category": "bookstore",
-        "name": "Yu & Me Books"
+        "name": "Yu & Me Books",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -309,7 +328,8 @@
       "properties": {
         "address": "159 Graham Avenue, Brooklyn, New York 11206, United States",
         "category": "restaurant",
-        "name": "Win Son"
+        "name": "Win Son",
+        "nationality": "taiwanese"
       },
       "geometry": {
         "coordinates": [
@@ -325,7 +345,8 @@
       "properties": {
         "address": "170 Montrose Avenue, Brooklyn, New York 11206, United States",
         "category": "grocery",
-        "name": "Yun Hai Shop"
+        "name": "Yun Hai Shop",
+        "nationality": "taiwanese"
       },
       "geometry": {
         "coordinates": [
@@ -341,7 +362,8 @@
       "properties": {
         "address": "104 Mosco Street, New York, New York 10013, United States",
         "category": "grocery",
-        "name": "Bangkok Center Grocery"
+        "name": "Bangkok Center Grocery",
+        "nationality": "thai"
       },
       "geometry": {
         "coordinates": [
@@ -357,7 +379,8 @@
       "properties": {
         "address": "163 West 10th Street, New York, New York 10014, United States",
         "category": "drinks",
-        "name": "Té Company"
+        "name": "Té Company",
+        "nationality": "taiwanese"
       },
       "geometry": {
         "coordinates": [
@@ -371,25 +394,10 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "404 West 49th Street, New York, New York 10019, United States",
-        "category": "restaurant",
-        "name": "LumLum"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98989,
-          40.76296
-        ],
-        "type": "Point"
-      },
-      "id": "address.6296272290740916"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "address": "204 East 13th Street, New York, New York 10003, United States",
         "category": "restaurant",
-        "name": "Soothr"
+        "name": "Soothr",
+        "nationality": "thai"
       },
       "geometry": {
         "coordinates": [
@@ -405,7 +413,8 @@
       "properties": {
         "address": "157 Hester Street, New York, New York 10013, United States",
         "category": "grocery",
-        "name": "Hong Kong Supermarket"
+        "name": "Hong Kong Supermarket",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -421,7 +430,8 @@
       "properties": {
         "address": "121 Bowery, New York, New York 10002, United States",
         "category": "grocery",
-        "name": "Tân Tín Hưng"
+        "name": "Tân Tín Hưng",
+        "nationality": "vietnamese"
       },
       "geometry": {
         "coordinates": [
@@ -437,7 +447,8 @@
       "properties": {
         "address": "564 Woodward Avenue, Queens, New York 11385, United States",
         "name": "Lichen",
-        "category": "retail"
+        "category": "retail",
+        "nationality": "chinese"
       },
       "geometry": {
         "coordinates": [
@@ -453,7 +464,8 @@
       "properties": {
         "address": "230 East 9th Street, New York, New York 10003, United States",
         "category": "drinks",
-        "name": "Cha-An"
+        "name": "Cha-An",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -469,7 +481,8 @@
       "properties": {
         "address": "68 Greenpoint Avenue, Brooklyn, New York 11222, United States",
         "category": "restaurant",
-        "name": "Di An Di"
+        "name": "Di An Di",
+        "nationality": "vietnamese"
       },
       "geometry": {
         "coordinates": [
@@ -485,7 +498,8 @@
       "properties": {
         "address": "143 Front Street, Brooklyn, New York 11201, United States",
         "name": "Front General Store",
-        "category": "retail"
+        "category": "retail",
+        "nationality": "japanese"
       },
       "geometry": {
         "coordinates": [
@@ -501,7 +515,8 @@
       "properties": {
         "address": "76-03 37th Avenue, Queens, New York 11372, United States",
         "category": "restaurant",
-        "name": "Lhasa Fast Food"
+        "name": "Lhasa Fast Food",
+        "nationality": "tibetan"
       },
       "geometry": {
         "coordinates": [

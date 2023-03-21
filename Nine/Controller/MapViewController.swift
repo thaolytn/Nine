@@ -65,8 +65,10 @@ class MapViewController: UIViewController {
         // Programmatically add About button
         let aboutImage = UIImage(named: "nine-flower")
         let aboutButton = UIButton(type: .custom)
-        aboutButton.frame = CGRect(x: 0.8, y: 30, width: 110, height: 110)
+        aboutButton.frame = CGRect(x: 0, y: 20, width: 110, height: 110)
         aboutButton.setImage(aboutImage, for: .normal)
+        aboutButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+        aboutButton.imageView?.isUserInteractionEnabled = false
         aboutButton.addTarget(self, action: #selector(handleAboutButtonTap(_:)), for: .touchUpInside)
         view.addSubview(aboutButton)
         
@@ -74,8 +76,10 @@ class MapViewController: UIViewController {
         // Programmatically add List button
         let listImage = UIImage(named: "list-button")
         let listButton = UIButton(type: .custom)
-        listButton.frame = CGRect(x: 260, y: 60, width: 120, height: 60)
+        listButton.frame = CGRect(x: 270, y: 50, width: 120, height: 60)
         listButton.setImage(listImage, for: .normal)
+        listButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+        listButton.imageView?.isUserInteractionEnabled = false
         listButton.addTarget(self, action: #selector(handleListButtonTap(_:)), for: .touchUpInside)
         view.addSubview(listButton)
         
@@ -138,4 +142,6 @@ class MapViewController: UIViewController {
     
     
 }
+
+
 
