@@ -25,6 +25,7 @@
                     <connections>
                         <segue destination="4Ns-Sr-Zoi" kind="show" identifier="goToAbout" id="YK3-bc-IDd"/>
                         <segue destination="CWS-7I-62P" kind="show" identifier="goToList" id="o1Q-K5-NBr"/>
+                        <segue destination="Lr7-GZ-FrT" kind="show" identifier="goToDescription" id="Kx4-2U-Aql"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,6 +112,140 @@
             </objects>
             <point key="canvasLocation" x="1837.4045801526718" y="-201.40845070422537"/>
         </scene>
+        <!--Description View Controller-->
+        <scene sceneID="r5Z-aB-2LS">
+            <objects>
+                <viewController id="Lr7-GZ-FrT" customClass="DescriptionViewController" customModule="Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rS4-bd-dIf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WU5-tZ-CLD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-hp-eEe" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="677.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_general_store" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-74-INV">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="bbe-IN-ic8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-2p-2RS">
+                                                <rect key="frame" x="10" y="320" width="373" height="75"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAN TIN HUNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-uD-4Uq" userLabel="Name Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="cYI-WU-EbV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-g6-bj7" userLabel="Address Label">
+                                                        <rect key="frame" x="0.0" y="35" width="373" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="1o4-LY-uPv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 714-579-5916" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-GQ-JSX" userLabel="Phone Label">
+                                                        <rect key="frame" x="0.0" y="55" width="373" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="1NY-k0-ai3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="EPR-Il-5nw"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-Da-gJJ" userLabel="Description Label">
+                                                <rect key="frame" x="15" y="415" width="363" height="167.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="g5J-t2-10W"/>
+                                                </constraints>
+                                                <string key="text">Tan Tin Hung is a charming and well-stocked supermarket that has gained a reputation for its exceptional assortment of high-quality Southeast Asian ingredients. From hard-to-find spices and exotic fruits to staple items like rice and noodles, Tan Tin Hung has everything you need to create authentic and delicious dishes from the region. The store's friendly staff are knowledgeable and always willing to help you find what you need, making shopping at Tan Tin Hung a delightful experience for any food lover. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-P6-LPe">
+                                                <rect key="frame" x="139" y="622.33333333333337" width="115" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="G9u-OM-rvD"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="MORE INFO" cornerStyle="capsule">
+                                                    <color key="baseBackgroundColor" name="NineGrey"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="infoButtonTapped:" destination="Lr7-GZ-FrT" eventType="touchUpInside" id="aQb-cx-oUS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="top" secondItem="WCU-2p-2RS" secondAttribute="bottom" constant="20" id="47z-i1-TYp"/>
+                                            <constraint firstItem="QpB-P6-LPe" firstAttribute="top" secondItem="u6X-Da-gJJ" secondAttribute="bottom" constant="40" id="5rg-nI-oa1"/>
+                                            <constraint firstItem="WCU-2p-2RS" firstAttribute="top" secondItem="Hnp-74-INV" secondAttribute="bottom" constant="20" id="LSy-hD-6Pf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hnp-74-INV" secondAttribute="trailing" id="Spe-Gx-SvZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="u6X-Da-gJJ" secondAttribute="trailing" constant="15" id="Vb7-On-6ay"/>
+                                            <constraint firstItem="WCU-2p-2RS" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="10" id="VtI-Nv-a8j"/>
+                                            <constraint firstItem="QpB-P6-LPe" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="139" id="XrJ-ew-V84"/>
+                                            <constraint firstAttribute="bottom" secondItem="QpB-P6-LPe" secondAttribute="bottom" constant="20" id="YeN-eG-ulb"/>
+                                            <constraint firstItem="Hnp-74-INV" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" id="jbA-GH-7pb"/>
+                                            <constraint firstAttribute="trailing" secondItem="WCU-2p-2RS" secondAttribute="trailing" constant="10" id="kGa-Nw-qeu"/>
+                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="15" id="oh7-Px-iz5"/>
+                                            <constraint firstItem="Hnp-74-INV" firstAttribute="top" secondItem="SHR-hp-eEe" secondAttribute="top" id="qFp-Ph-uCa"/>
+                                            <constraint firstAttribute="trailing" secondItem="QpB-P6-LPe" secondAttribute="trailing" constant="139" id="xvb-MF-W6l"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SHR-hp-eEe" firstAttribute="leading" secondItem="WU5-tZ-CLD" secondAttribute="leading" id="Aop-qO-fX8"/>
+                                    <constraint firstAttribute="bottom" secondItem="SHR-hp-eEe" secondAttribute="bottom" id="Hbt-3X-SFP"/>
+                                    <constraint firstAttribute="trailing" secondItem="SHR-hp-eEe" secondAttribute="trailing" id="QT3-mK-CBr"/>
+                                    <constraint firstItem="SHR-hp-eEe" firstAttribute="top" secondItem="WU5-tZ-CLD" secondAttribute="top" id="VjL-r2-3bE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DmQ-E8-rSt"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WU5-tZ-CLD" firstAttribute="leading" secondItem="DmQ-E8-rSt" secondAttribute="leading" id="DXB-ip-HST"/>
+                            <constraint firstAttribute="bottom" secondItem="WU5-tZ-CLD" secondAttribute="bottom" id="SxB-8I-QFq"/>
+                            <constraint firstItem="WU5-tZ-CLD" firstAttribute="top" secondItem="DmQ-E8-rSt" secondAttribute="top" id="e46-hx-xPK"/>
+                            <constraint firstItem="SHR-hp-eEe" firstAttribute="width" secondItem="rS4-bd-dIf" secondAttribute="width" id="ktw-kH-Tmc"/>
+                            <constraint firstItem="WU5-tZ-CLD" firstAttribute="trailing" secondItem="DmQ-E8-rSt" secondAttribute="trailing" id="lF6-sz-9YK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xnp-S3-LT6">
+                        <barButtonItem key="rightBarButtonItem" title="Directions" style="done" id="Dxl-cf-QmP">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="directionButtonTapped:" destination="Lr7-GZ-FrT" id="k3Z-Fc-9Jh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="BJI-g6-bj7" id="cfm-yF-Nej"/>
+                        <outlet property="descriptionLabel" destination="u6X-Da-gJJ" id="rLM-9g-byZ"/>
+                        <outlet property="nameLabel" destination="pdg-uD-4Uq" id="5ev-Ad-yuA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIa-53-9Id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003.8167938931298" y="1407.7464788732395"/>
+        </scene>
         <!--List View Controller-->
         <scene sceneID="itv-gA-25T">
             <objects>
@@ -186,6 +321,7 @@
                     <connections>
                         <outlet property="nationalityCollectionView" destination="s19-NR-Ggc" id="KJ2-Kw-cAc"/>
                         <outlet property="tableView" destination="fZH-F7-kl9" id="G61-S7-QeT"/>
+                        <segue destination="Lr7-GZ-FrT" kind="show" identifier="goToDescription" id="Cpz-fE-6A5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpJ-g1-NrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -211,7 +347,11 @@
             <point key="canvasLocation" x="12.977099236641221" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cpz-fE-6A5"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="front_general_store" width="712" height="366"/>
         <image name="nine-flower-about-page" width="381" height="381"/>
         <image name="report-bug-button" width="221" height="48"/>
         <image name="support-us-button" width="221" height="48"/>

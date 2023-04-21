@@ -13,6 +13,7 @@ import MapboxCoreMaps
 class MapViewController: UIViewController {
 
     private var mapView: MapView!
+    private var currentFeature : Turf.Feature!
     
     private enum Constants {
         static let STYLE_URL = "mapbox://styles/thaolyngo/ckdq24xor0rv81iqgphyie5qg"
@@ -38,6 +39,11 @@ class MapViewController: UIViewController {
         mapView.ornaments.options.scaleBar.visibility = .hidden
         mapView.ornaments.options.compass.visibility = .hidden
 
+        // Display 2D puck for current location
+        mapView.location.options.puckType = .puck2D()
+        
+        // Add gesture recognizer when user taps on features
+        mapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleFeatureTap)))
         
         // Set the mapView to the current view
         view.addSubview(mapView)
@@ -94,6 +100,22 @@ class MapViewController: UIViewController {
     
     //MARK: - Utility Methods
     
+    @objc private func handleFeatureTap(_ sender: UITapGestureRecognizer) {
+        let point = sender.location(in: mapView)
+        let queryOptions = RenderedQueryOptions(layerIds: [Constants.LAYER_ID], filter: nil)
+        
+        mapView.mapboxMap.queryRenderedFeatures(with: point, options: queryOptions) { result in
+            if case let .success(queriedFeatures) = result, let feature = queriedFeatures.first?.feature {
+                print("Feature Tapped in Map")
+                self.currentFeature = feature
+                self.performSegue(withIdentifier: "goToDescription", sender: self)
+            } else {
+                print("Random Location Tapped in Map")
+            }
+        }
+                
+    }
+
     private func prepareStyle() {
         
         let style = mapView.mapboxMap.style
@@ -121,8 +143,8 @@ class MapViewController: UIViewController {
         
         try! style.addLayer(symbolLayer)
         
-        
     }
+    
     
     
     
@@ -130,17 +152,27 @@ class MapViewController: UIViewController {
     
     //MARK: - Segue Methods
     
-    @objc func handleAboutButtonTap(_ sender: UIButton!) {
+    @objc private func handleAboutButtonTap(_ sender: UIButton!) {
         print("About button tapped")
         performSegue(withIdentifier: "goToAbout", sender: self)
     }
 
-    @objc func handleListButtonTap(_ sender: UIButton) {
+    @objc private func handleListButtonTap(_ sender: UIButton) {
         print("List button tapped")
         performSegue(withIdentifier: "goToList", sender: self)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDescription" {
+            let descVC = segue.destination as! DescriptionViewController
+            
+            if case let .string(jsonName) = currentFeature.properties?["name"],
+               case let .string(jsonAddress) = currentFeature.properties?["address"] {
+                descVC.featureName = String(jsonName)
+                descVC.featureAddress = String(jsonAddress)
+            }
+        }
+    }
 }
 
 

@@ -15,9 +15,9 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var features : [FeatureModel]?
-    var filteredFeatures = [FeatureModel]()
-    var featureManager : FeatureManager = FeatureManager()
+    private var features : [FeatureModel]?
+    private var filteredFeatures = [FeatureModel]()
+    private var featureManager : FeatureManager = FeatureManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,7 @@ class ListViewController: UIViewController {
         // Configure table view
         tableView.register(UINib(nibName: "FeatureCell", bundle: nil), forCellReuseIdentifier: "FeatureCell")
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = 130
         tableView.separatorStyle = .none
         tableView.backgroundColor = .white
@@ -54,7 +55,7 @@ class ListViewController: UIViewController {
     }
     
 
-    func fetchNationalities() {
+    private func fetchNationalities() {
         var uniqueNationalities = Set<String>()
         
         if let nineFeatures = features {
@@ -71,7 +72,6 @@ class ListViewController: UIViewController {
         }
     }
     
-    
 }
 
 
@@ -81,7 +81,6 @@ class ListViewController: UIViewController {
 
 extension ListViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("NATIONALITIES COUNT: \(nationalities.count)")
         return nationalities.count
     }
     
@@ -108,7 +107,6 @@ extension ListViewController : UICollectionViewDataSource {
 
 
 
-
 //MARK: - CollectionView Delegate Methods
 extension ListViewController : UICollectionViewDelegateFlowLayout {
     
@@ -124,7 +122,6 @@ extension ListViewController : UICollectionViewDelegateFlowLayout {
     
     func filterFeatures() {
         let selectedNationalities = nationalities.filter{$0.selected}
-        print("SELECTED NATIONALITIES: \(selectedNationalities)")
         
         if let currentFeatures = features {
             if selectedNationalities.isEmpty {
@@ -173,5 +170,34 @@ extension ListViewController : UITableViewDataSource {
         return cell
     }
     
+}
+
+//MARK: - TableView Delegate Methods
+    
+extension ListViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Feature Tapped in List")
+        performSegue(withIdentifier: "goToDescription", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let row = tableView.indexPathForSelectedRow?.row {
+            let selectedFeature : FeatureModel?
+            
+            if filteredFeatures.isEmpty {
+                selectedFeature = features?[row]
+            } else {
+                selectedFeature = filteredFeatures[row]
+            }
+            
+            let descVC = segue.destination as! DescriptionViewController
+            descVC.featureName = selectedFeature?.name ?? ""
+            descVC.featureAddress = selectedFeature?.address ?? ""
+            
+        }
+    }
+    
     
 }
+
