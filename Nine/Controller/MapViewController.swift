@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
         static let STYLE_URL = "mapbox://styles/thaolyngo/ckdq24xor0rv81iqgphyie5qg"
         static let PUBLIC_TOKEN = "pk.eyJ1IjoidGhhb2x5bmdvIiwiYSI6ImNsZW43ZDNqZTE4cXMzcm5oamU5cXM1eTIifQ.YOrnBSD-avGEriAFfE6X3Q"
         static let SOURCE_ID = "NINE_FEATURES"
-        static let LAYER_ID = "NINE_SYMBOLS"
+        static let LAYER_ID = "nine-features"
         static let LOCATION_ICON_ID = "NINE_LOCATION_ICON"
         
     }
@@ -94,7 +94,7 @@ class MapViewController: UIViewController {
         mapView.mapboxMap.onNext(event: .mapLoaded) { _ in
             self.prepareStyle()
         }
-        
+    
     }
     
     
@@ -103,6 +103,7 @@ class MapViewController: UIViewController {
     @objc private func handleFeatureTap(_ sender: UITapGestureRecognizer) {
         let point = sender.location(in: mapView)
         let queryOptions = RenderedQueryOptions(layerIds: [Constants.LAYER_ID], filter: nil)
+        // let queryOptions = RenderedQueryOptions(layerIds: ["nine-features"], filter: nil)
         
         mapView.mapboxMap.queryRenderedFeatures(with: point, options: queryOptions) { result in
             if case let .success(queriedFeatures) = result, let feature = queriedFeatures.first?.feature {
@@ -115,7 +116,7 @@ class MapViewController: UIViewController {
         }
                 
     }
-
+    
     private func prepareStyle() {
         
         let style = mapView.mapboxMap.style
@@ -144,9 +145,9 @@ class MapViewController: UIViewController {
         try! style.addLayer(symbolLayer)
         
     }
-    
-    
-    
+
+
+
     
     
     
@@ -167,9 +168,19 @@ class MapViewController: UIViewController {
             let descVC = segue.destination as! DescriptionViewController
             
             if case let .string(jsonName) = currentFeature.properties?["name"],
-               case let .string(jsonAddress) = currentFeature.properties?["address"] {
+               case let .string(jsonAddress) = currentFeature.properties?["address"],
+               case let .string(jsonPhone) = currentFeature.properties?["phone"],
+               case let .string(jsonDescription) = currentFeature.properties?["description"],
+               case let .string(jsonSocial) = currentFeature.properties?["social"],
+               case let .string(jsonImage) = currentFeature.properties?["image"] {
+                
                 descVC.featureName = String(jsonName)
                 descVC.featureAddress = String(jsonAddress)
+                descVC.featurePhone = String(jsonPhone)
+                descVC.featureDescription = String(jsonDescription)
+                descVC.featureSocial = String(jsonSocial)
+                descVC.featureImage = String(jsonImage)
+                   
             }
         }
     }

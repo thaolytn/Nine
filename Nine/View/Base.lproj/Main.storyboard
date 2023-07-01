@@ -54,17 +54,17 @@
                                         <rect key="frame" x="0.0" y="134" width="393" height="450"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-fg-lfq">
-                                                <rect key="frame" x="16" y="8" width="360" height="304.33333333333331"/>
-                                                <string key="text">The name 'nine' pays homage to the nine established Chinatowns within New York City. This is a passion project that captures our personal experience living in one of the most densely populated cities in the world as young Asian Americans. We recognize the common effort to rediscover our cultural identity through traditional cuisines and services, all the while contributing to the growth of our community. With that in mind, we've curated 35 of our favorite Asian American-owned businesses to support now and always. The current list is by no means exhaustive, you are welcomed to submit your own locations to our online database for a chance to be featured. We stand with the AAPI communities to fight against hate crimes during the time of COVID-19. Please consider donating to these NYC-based organizations.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <rect key="frame" x="10" y="8" width="373" height="352"/>
+                                                <string key="text">The name 'nine' pays homage to the nine established Chinatowns within New York City. This is a passion project that captures our personal experience living in one of the most densely populated cities in the world as young Asian Americans. We recognize the common effort to rediscover our cultural identity through traditional cuisines and services, all the while contributing to the growth of our community. With that in mind, we've curated 19 of our favorite Asian American-owned businesses to support now and always. The current list is by no means exhaustive, you are welcomed to submit your own locations to our online database for a chance to be featured. We stand with the AAPI communities to fight against hate crimes during the time of COVID-19. Please consider donating to these NYC-based organizations.</string>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="LdV-fg-lfq" firstAttribute="top" secondItem="W9F-BM-cU0" secondAttribute="top" constant="8" id="Ubq-ZO-Evg"/>
-                                            <constraint firstAttribute="trailing" secondItem="LdV-fg-lfq" secondAttribute="trailing" constant="17" id="lLP-bc-fsO"/>
-                                            <constraint firstItem="LdV-fg-lfq" firstAttribute="leading" secondItem="W9F-BM-cU0" secondAttribute="leading" constant="16" id="rrN-wp-vOy"/>
+                                            <constraint firstAttribute="trailing" secondItem="LdV-fg-lfq" secondAttribute="trailing" constant="10" id="lLP-bc-fsO"/>
+                                            <constraint firstItem="LdV-fg-lfq" firstAttribute="leading" secondItem="W9F-BM-cU0" secondAttribute="leading" constant="10" id="rrN-wp-vOy"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-0C-4RK" userLabel="Button Stack View">
@@ -124,18 +124,18 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-hp-eEe" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="677.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="934"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_general_store" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-74-INV">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-74-INV">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="bbe-IN-ic8"/>
                                                 </constraints>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-2p-2RS">
-                                                <rect key="frame" x="10" y="320" width="373" height="75"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-2p-2RS">
+                                                <rect key="frame" x="10" y="320" width="373" height="94"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAN TIN HUNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-uD-4Uq" userLabel="Name Label">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tan Tin Hung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-uD-4Uq" userLabel="Name Label">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="cYI-WU-EbV"/>
@@ -144,41 +144,43 @@
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-g6-bj7" userLabel="Address Label">
-                                                        <rect key="frame" x="0.0" y="35" width="373" height="20"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="441 West 49th St Apt 15 New York, NY 10019 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-g6-bj7" userLabel="Address Label">
+                                                        <rect key="frame" x="0.0" y="39" width="373" height="20"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="1o4-LY-uPv"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="1o4-LY-uPv"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 714-579-5916" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-GQ-JSX" userLabel="Phone Label">
-                                                        <rect key="frame" x="0.0" y="55" width="373" height="20"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="1NY-k0-ai3"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqI-MW-UEn" userLabel="Phone Number">
+                                                        <rect key="frame" x="0.0" y="63" width="373" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Phone Number">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="phoneButtonTapped:" destination="Lr7-GZ-FrT" eventType="touchUpInside" id="gL6-5w-G4s"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="75" id="EPR-Il-5nw"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="EPR-Il-5nw"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-Da-gJJ" userLabel="Description Label">
-                                                <rect key="frame" x="15" y="415" width="363" height="167.33333333333337"/>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-Da-gJJ" userLabel="Description Label">
+                                                <rect key="frame" x="10" y="434" width="373" height="405"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="g5J-t2-10W"/>
                                                 </constraints>
-                                                <string key="text">Tan Tin Hung is a charming and well-stocked supermarket that has gained a reputation for its exceptional assortment of high-quality Southeast Asian ingredients. From hard-to-find spices and exotic fruits to staple items like rice and noodles, Tan Tin Hung has everything you need to create authentic and delicious dishes from the region. The store's friendly staff are knowledgeable and always willing to help you find what you need, making shopping at Tan Tin Hung a delightful experience for any food lover. </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <string key="text">Hudson Wilder is a Brooklyn-based, homeware brand founded by the brother-sister duo, Joyce and Conway Liao. Together, they embarked on a mission to shape the New American Design movement, designing objects that are meant for everyday use and achieving the perfect balance between form and utility. Whether you visit their DUMBO location at 142 Plymouth Street or explore their online store, you will find a display of multipurpose objects that demonstrate their practicality right in your own home. From colorful handblown glasses and beige dinner plates to an assortment of magazines and lifestyle products, Hudson Wilder offers an exquisite selection of their original designs, alongside thoughtfully chosen pieces from local and international designers, artists, and brands. Their physical store also houses a cafe with an ever-evolving menu of beverages and pastries, all served on their homeware products so that customers can experience those items firsthand. Using products from Hudson Wilder is more than just acquiring homeware—it's embracing the Art of Casual Living.</string>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-P6-LPe">
-                                                <rect key="frame" x="139" y="622.33333333333337" width="115" height="35"/>
+                                                <rect key="frame" x="139.33333333333334" y="879" width="114.33333333333334" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="G9u-OM-rvD"/>
                                                 </constraints>
@@ -193,19 +195,19 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QpB-P6-LPe" secondAttribute="trailing" constant="139.33000000000001" id="1Km-Ox-ucx"/>
                                             <constraint firstItem="u6X-Da-gJJ" firstAttribute="top" secondItem="WCU-2p-2RS" secondAttribute="bottom" constant="20" id="47z-i1-TYp"/>
                                             <constraint firstItem="QpB-P6-LPe" firstAttribute="top" secondItem="u6X-Da-gJJ" secondAttribute="bottom" constant="40" id="5rg-nI-oa1"/>
                                             <constraint firstItem="WCU-2p-2RS" firstAttribute="top" secondItem="Hnp-74-INV" secondAttribute="bottom" constant="20" id="LSy-hD-6Pf"/>
+                                            <constraint firstItem="QpB-P6-LPe" firstAttribute="leading" relation="lessThanOrEqual" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="139.33000000000001" id="Rtl-gM-7bQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Hnp-74-INV" secondAttribute="trailing" id="Spe-Gx-SvZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="u6X-Da-gJJ" secondAttribute="trailing" constant="15" id="Vb7-On-6ay"/>
+                                            <constraint firstAttribute="trailing" secondItem="u6X-Da-gJJ" secondAttribute="trailing" constant="10" id="Vb7-On-6ay"/>
                                             <constraint firstItem="WCU-2p-2RS" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="10" id="VtI-Nv-a8j"/>
-                                            <constraint firstItem="QpB-P6-LPe" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="139" id="XrJ-ew-V84"/>
                                             <constraint firstAttribute="bottom" secondItem="QpB-P6-LPe" secondAttribute="bottom" constant="20" id="YeN-eG-ulb"/>
                                             <constraint firstItem="Hnp-74-INV" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" id="jbA-GH-7pb"/>
                                             <constraint firstAttribute="trailing" secondItem="WCU-2p-2RS" secondAttribute="trailing" constant="10" id="kGa-Nw-qeu"/>
-                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="15" id="oh7-Px-iz5"/>
+                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="10" id="oh7-Px-iz5"/>
                                             <constraint firstItem="Hnp-74-INV" firstAttribute="top" secondItem="SHR-hp-eEe" secondAttribute="top" id="qFp-Ph-uCa"/>
-                                            <constraint firstAttribute="trailing" secondItem="QpB-P6-LPe" secondAttribute="trailing" constant="139" id="xvb-MF-W6l"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -239,7 +241,9 @@
                     <connections>
                         <outlet property="addressLabel" destination="BJI-g6-bj7" id="cfm-yF-Nej"/>
                         <outlet property="descriptionLabel" destination="u6X-Da-gJJ" id="rLM-9g-byZ"/>
+                        <outlet property="imageView" destination="Hnp-74-INV" id="GmN-6n-bub"/>
                         <outlet property="nameLabel" destination="pdg-uD-4Uq" id="5ev-Ad-yuA"/>
+                        <outlet property="phoneButton" destination="aqI-MW-UEn" id="Jmu-E1-mMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIa-53-9Id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -276,7 +280,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NATIONALITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH1-Ej-Tsk" userLabel="Nationality Name">
                                                     <rect key="frame" x="8" y="8" width="135" height="33"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -351,7 +355,6 @@
         <segue reference="Cpz-fE-6A5"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="front_general_store" width="712" height="366"/>
         <image name="nine-flower-about-page" width="381" height="381"/>
         <image name="report-bug-button" width="221" height="48"/>
         <image name="support-us-button" width="221" height="48"/>

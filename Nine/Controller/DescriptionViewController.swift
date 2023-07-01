@@ -12,9 +12,20 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var phoneButton: UIButton!
+    
+    let phoneButtonAttributes : [NSAttributedString.Key:Any] = [
+        .underlineStyle: NSUnderlineStyle.single.rawValue
+    ]
     
     var featureName : String = ""
     var featureAddress : String = ""
+    var featurePhone : String = ""
+    var featureDescription : String = ""
+    var featureSocial : String = ""
+    var featureImage : String = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +37,17 @@ class DescriptionViewController: UIViewController {
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backArrowImage
         navigationController?.navigationBar.tintColor = .black
         
-        nameLabel.text = featureName.uppercased()
+        
+        nameLabel.text = featureName // featureName.uppercased()
         addressLabel.text = featureAddress
+        descriptionLabel.text = featureDescription
+        imageView.image = UIImage(named: featureImage)
+        
+        let attributeString = NSMutableAttributedString(string: featurePhone, attributes: phoneButtonAttributes)
+        phoneButton.setAttributedTitle(attributeString, for: .normal)
+       
+
+        
     }
     
   
@@ -44,9 +64,18 @@ class DescriptionViewController: UIViewController {
     }
     
     @IBAction func infoButtonTapped(_ sender: UIButton) {
-        guard let infoURL = URL(string: "https://www.google.com") else {return}
+        guard let infoURL = URL(string: featureSocial) else {return}
         UIApplication.shared.open(infoURL, options: [:] )
     }
     
+    @IBAction func phoneButtonTapped(_ sender: Any) {
+        let phoneNumber = featurePhone.replacingOccurrences(of: " |\\(|\\)|-", with: "", options: [.regularExpression])
+        print(phoneNumber)
+        guard let phoneURL = URL(string: "telprompt://\(phoneNumber)"), UIApplication.shared.canOpenURL(phoneURL) else {
+            print("Failed to call")
+            return
+        }
+        UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
+    }
     
 }

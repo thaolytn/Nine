@@ -3,265 +3,161 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "180 Duane Street, New York, New York 10013",
-        "category": "retail",
-        "name": "180 The Store",
-        "nationality": "japanese"
+        "address": "44 E 21st St, New York, NY 10010",
+        "category": "bakery",
+        "name": "Lysée",
+        "nationality": "korean",
+        "description": "Lysée is a French Korean bakery founded by the talented chef Eunji Lee that takes New York's pastry scene to new heights of experimentation. Located in the Flatiron District, this bakery draws passionate customers who usually queue for half an hour or more, eagerly anticipating a seat in their downstairs dining area. Those who prefer takeout options are lead to second floor of the building, where edible arts sit an arm's length away from each other on beige counters crafted from traditional Korean materials, perfectly illuminated by spotlight fixtures that evoke the atmosphere of an art gallery. From the meticulously craft corn mousse cakes that closely resemble real corn, to the classic viennoiseries such pain au chocolat and kouign amann, Lysée adds its own unique twist to every creation. But the experience doesn't end there. Lysée's menu is complemented by a selection of homemade drinks, including seasonal juices and signature lattes, carefully curated to perfectly accompany their delectable pastries. At Lysée, every detail is thoughtfully considered, resulting in an immersive sensory experience that indulges both the eyes and the palate.",
+        "social": "https://www.lyseenyc.com/",
+        "phone": "Contact via social media",
+        "image": "lysee"
       },
       "geometry": {
         "coordinates": [
-          -74.00999,
-          40.71712
+          -73.988225,
+          40.739125
         ],
         "type": "Point"
       },
-      "id": "address.1151876715451108"
+      "id": "0211780633251bd545bf8f4d13cc3440"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "202 Centre Street, New York, New York 10013",
-        "category": "restaurant",
-        "name": "Jing Fong ",
-        "nationality": "chinese"
+        "address": "332 E 9th St, New York, NY 10003",
+        "category": "bakery",
+        "name": "Lady Wong",
+        "nationality": "malaysian",
+        "description": "Lady Wong is a pastry shop that specializes in Southeast Asian desserts and was established during the peak of the Covid-19 pandemic. The owners, Seleste Tan and her husband, Mogan Anthony, bring a wealth of culinary experience from their time working in renowned kitchens of 5-star hotels and Michelin-star restaurants in Malaysia, Singapore, and New York. Faced with the disappointment of being unable to travel home for Lunar New Year amidst the pandemic, the couple transformed their longing into a creative inspiration, baking traditional pastries at home to celebrate the occasion. Now, their expertise lies in a diverse array of Kuih, delightful bite-sized snacks with vibrant colors and a range of sweet or savory flavors, originating from the rich culinary heritage of Malaysia. Additionally, Lady Wong offers pre-orders for cakes featuring unique flavors such as pandan, black sesame, or durian, perfect for special occasions.",
+        "social": "https://ladywong.com/",
+        "phone": "(646) 422-7189",
+        "image": "lady_wong"
       },
       "geometry": {
         "coordinates": [
-          -73.999026,
-          40.71861
+          -73.98611,
+          40.72855
         ],
         "type": "Point"
       },
-      "id": "address.1177275781565682"
+      "id": "069af5e503f11902bfb9d67b0985b3bc"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "79 Chrystie Street, New York, New York 10002",
-        "category": "restaurant",
-        "name": "Wah Fung Fast Food",
-        "nationality": "chinese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.99451,
-          40.71733
-        ],
-        "type": "Point"
-      },
-      "id": "address.1193662015602376"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "310 Grand Street, Brooklyn, New York 11211",
-        "category": "retail",
-        "name": "About Glamour",
-        "nationality": "japanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.95719,
-          40.712735
-        ],
-        "type": "Point"
-      },
-      "id": "address.1498196644516986"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "259 East 10th Street, New York, New York 10009",
-        "category": "drinks",
-        "name": "Lê Phin",
-        "nationality": "vietnamese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98346,
-          40.728535
-        ],
-        "type": "Point"
-      },
-      "id": "address.172469149332982"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "679 Greenwich Street, New York, New York 10014",
-        "category": "restaurant",
-        "name": "Jeju Noodle Bar",
-        "nationality": "korean"
-      },
-      "geometry": {
-        "coordinates": [
-          -74.007305,
-          40.733035
-        ],
-        "type": "Point"
-      },
-      "id": "address.176823820153438"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "83 East 7th Street, New York, New York 10003",
-        "category": "retail",
-        "name": "Tokio 7",
-        "nationality": "japanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.986085,
-          40.727305
-        ],
-        "type": "Point"
-      },
-      "id": "address.276658113947654"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "163 Plymouth Street, Brooklyn, New York 11201",
-        "category": "drinks",
-        "name": "Usagi",
-        "nationality": "japanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98691,
-          40.70382
-        ],
-        "type": "Point"
-      },
-      "id": "address.3136196625452586"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "43 East 28th Street, New York, New York 10016",
-        "category": "restaurant",
-        "name": "Atoboy",
-        "nationality": "korean"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98521,
-          40.74405
-        ],
-        "type": "Point"
-      },
-      "id": "address.319123772951110"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "22 East 1st Street, New York, New York 10003",
-        "category": "retail",
-        "name": "Nalata Nalata",
-        "nationality": "japanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.99128,
-          40.72458
-        ],
-        "type": "Point"
-      },
-      "id": "address.3516000217405146"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "85 Avenue a, New York, New York 10009",
-        "category": "restaurant",
-        "name": "Somtum Der",
-        "nationality": "thai"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98437,
-          40.725285
-        ],
-        "type": "Point"
-      },
-      "id": "address.3905051136264558"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "28 Forsyth Street, New York, New York 10002",
-        "category": "retail",
-        "name": "HAPPY99",
-        "nationality": "vietnamese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.994235,
-          40.71523
-        ],
-        "type": "Point"
-      },
-      "id": "address.3928092371292170"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "6301 8th Avenue, Brooklyn, New York 11220",
+        "address": "85-12 Queens Blvd # 1, Queens, NY 11373",
         "category": "grocery",
-        "name": "Fei Long Market",
-        "nationality": "chinese"
+        "name": "Indo Java",
+        "nationality": "indonesian",
+        "description": "Indo Java is an Indonesian mini-mart located in Elmhurst, Queens, and in the back houses a charming makeshift restaurant known as Warung Selasa, which translates to \"Tuesday Food Stall\". Led by the owner and chef, Dewi Tjahjadi, the establishment fills a much-needed gap in the city's limited Indonesian food scene. What sets them apart is their unique approach to the menu - there isn't one. In the days leading up to Tuesday of each week, customers can discover the dishes available for purchase through the store's Instagram account. They offer a selection of Indonesian classics, including Nasi Campur, a combination of white rice accompanied by an array of veggies, proteins, peanuts, egg, and prawn crackers. While seating is limited, visitors can enjoy browsing through an assortment of snack options and hard-to-find Indonesian groceries while waiting to grab a spot in this one-of-a-kind food stall.",
+        "social": "https://www.instagram.com/indojavagroceries/",
+        "phone": "(718) 779-2241",
+        "image": "indo_java"
       },
       "geometry": {
         "coordinates": [
-          -74.01141,
-          40.633405
+          -73.878325,
+          40.73662
         ],
         "type": "Point"
       },
-      "id": "address.407849664996962"
+      "id": "369c5d5355c0d764300e9624db4b2983"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "58 West 56th Street, New York, New York 10019",
+        "address": "81 Division St, New York, NY 10002",
         "category": "restaurant",
-        "name": "Bengal Tiger",
-        "nationality": "indian"
+        "name": "Fong On",
+        "nationality": "chinese",
+        "description": "Fong On is the oldest family-run tofu shop in New York City. Formerly known as Fong Inn Too, this iconic Chinatown spot first opened its doors in 1933, and although it closed down in 2017, it was revitalized as a bright and airy corner store on Division Street. Needless to say, Fong On has become a beloved fixture among the Chinatown landmarks, captivating not only the original Chinese American immigrant community but also attracting a younger audience. Throughout the years, their menu has evolved to encompass a delightful array of offerings such as the glutinous rice cakes, soy milks, and herbal teas, while their classic tofu puddings are now available in both sweet and savory options. When it comes to customizing your tofu experience, you can keep it simple with ginger syrup over your tofu, or go wild with an array of toppings from boba and grass jelly to crispy shallots and fresh scallions.",
+        "social": "https://www.instagram.com/fongon1933/",
+        "phone": "(917) 261-7222",
+        "image": "fong_on"
       },
       "geometry": {
         "coordinates": [
-          -73.977095,
-          40.763215
+          -73.993705,
+          40.714195
         ],
         "type": "Point"
       },
-      "id": "address.4340329229995216"
+      "id": "5b57ada7e35d03ff039112db5935712c"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "17 East 31st Street, New York, New York 10016",
+        "address": "142 Plymouth St, Brooklyn, NY 11201",
+        "category": "retail",
+        "name": "Hudson Wilder",
+        "nationality": "taiwanese",
+        "description": "Hudson Wilder is a Brooklyn-based, homeware brand founded by the brother-sister duo, Joyce and Conway Liao. Together, they embarked on a mission to shape the New American Design movement, designing objects that are meant for everyday use and achieving the perfect balance between form and utility. Whether you visit their DUMBO location at 142 Plymouth Street or explore their online store, you will find a display of multipurpose objects that demonstrate their practicality right in your own home. From colorful handblown glasses and beige dinner plates to an assortment of magazines and lifestyle products, Hudson Wilder offers an exquisite selection of their original designs, alongside thoughtfully chosen pieces from local and international designers, artists, and brands. Their physical store also houses a cafe with an ever-evolving menu of beverages and pastries, all served on their homeware products so that customers can experience those items firsthand. Using products from Hudson Wilder is more than just acquiring homeware—it's embracing the Art of Casual Living.",
+        "social": "https://hudsonwilder.com/",
+        "phone": "(917) 620-1620",
+        "image": "hudson_wilder"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98794,
+          40.703735
+        ],
+        "type": "Point"
+      },
+      "id": "816e22ccb8b907a94995049c132709c2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "212 E 10th St, New York, NY 10003",
         "category": "restaurant",
-        "name": "Her Name Is Han",
-        "nationality": "korean"
+        "name": "Madame Vo",
+        "nationality": "vietnamese",
+        "description": "Seeking out genuinely authentic and delicious Vietnamese cuisine in the city can be quite a daunting task. However, Madame Vo has not only made the search easier but also become a beacon for introducing customers from all over the globe to the excellence of Vietnamese gastronomy. The love and care put into every dish are evident, with highlights like the Madame Pho, featuring a rich broth simmered for a remarkable 24 hours. The owners, chef Jimmy Ly and his wife, Yen Vo, go the extra mile to recreate the experience of savoring home-cooked Vietnamese meals. They go beyond typical offerings and introduce uncommon yet genuine dishes that are reminiscent of what you would find in a Vietnamese household. One such dish is their popular Suon Kho, featuring caramelized pork ribs braised in a delightful blend of coconut water and pineapple. Madame Vo has undeniably made a remarkable impact on NYC's ever-growing Vietnamese dining scene, catering to both Vietnamese individuals longing for a taste of home and foreigners eager to embark on a captivating Vietnamese culinary journey.",
+        "social": "https://www.madamevo.com/",
+        "phone": "(917) 261-2115",
+        "image": "madame_vo"
       },
       "geometry": {
         "coordinates": [
-          -73.98477,
-          40.746215
+          -73.98607,
+          40.729295
         ],
         "type": "Point"
       },
-      "id": "address.4364238981110670"
+      "id": "a982e619b36856b4e76b8f2863c80c10"
     },
     {
       "type": "Feature",
       "properties": {
-        "address": "76-04 Woodside Avenue, Queens, New York 11373",
+        "address": "151 Allen St Store S, New York, NY 10002",
+        "category": "drinks",
+        "name": "Kabisera",
+        "nationality": "filipino",
+        "description": "Located in the Lower East Side of Manhattan, Kabisera is a charming Filipino cafeteria that draws in customers with its diverse array of offerings. From delectable Filipino meals and desserts to a thoughtfully curated selection of groceries, arts, books, accessories, and more, Kabisera aims to create a space that promotes and celebrates the rich tapestry of Filipino culture. Locals are specifically drawn to Kabisera for its exceptional Filipino drinks and desserts. Some popular items on the menu are their signature ube drinks, leche flan, taho (warm silken tofu with chewy tapioca balls), or bibingka (baked rice cake with a sponge-like texture). One of the unique aspects of Kabisera is its ever-evolving menu, reflecting their collaborations with different Filipino chefs and artists, and making each visit an opportunity to expand one's knowledge of Filipino cuisine and culture. Currently, you can find Kabisera operating in two locations: their original spot on Allen Street and inside Canal Street Market in Chinatown.",
+        "social": "https://www.kabisera.com/",
+        "phone": "(929) 920-8250",
+        "image": "kabisera"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98981,
+          40.72087
+        ],
+        "type": "Point"
+      },
+      "id": "abf81b6888653085210771fff6687d64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "76-04 Woodside Avenue, Queens, New York 11373, United States",
         "category": "restaurant",
         "name": "Zaab Zaab",
-        "nationality": "thai"
+        "nationality": "thai",
+        "description": "Elmhurst, Queens is a neighborhood where you can find a multitude of remarkable Thai kitchens. But Zaab Zaab, a restaurant dedicated to showcasing the true essence of northeastern \"Isan\" cuisine, takes the spotlight. The commitment in preserving the authenticity of Isan flavors are evident in every dish, refusing to compromise on their fiery, herbal, and pungent flavors that make this regional cuisine so unique. The name itself, which translates to \"extremely delicious\", sets the tone for the optimistic experience they aim to inspire. Every element in their dining space contributes to an energetic atmosphere perfect for gathering with friends or family, with staff sporting fashionable fedora hats, walls painted in lively hues, whimsical chicken decor, and the uplifting melodies of upbeat Thai songs filling the air. Zaab Zaab's menu is pretty intensive, separating into section such as snacks, larb (minced meats seasoned with an array of herbs), som tum (sour and spicy green papaya salad), grilled dishes, and a selection of fish preparations.",
+        "social": "https://zaabzaabnyc.com/",
+        "phone": "(631) 526-1664",
+        "image": "zaab_zaab"
       },
       "geometry": {
         "coordinates": [
@@ -275,10 +171,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "114 East 1st Street, New York, New York 10009",
+        "address": "114 East 1st Street, New York, New York 10009, United States",
         "category": "grocery",
         "name": "Punjabi Deli",
-        "nationality": "punjabi"
+        "nationality": "indian",
+        "description": "Punjabi Deli & Grocery is an iconic cash-only institution in NYC that's well-loved by locals for its exceptional Punjabi vegetarian fare at very affordable prices. Located on the basement level, this unassuming deli displays a glass counter filled with steaming trays of different types of curries, rotis, pakoras, and samosas. Their combo meals allow customers to create their perfect mix of flavors, from sweet to savory, based on personal preferences, and for as low as $6. Make sure to try the samosa chaat—a vegetarian dish consisting of smashed samosas topped with chickpeas, chutney, and cripsy fried potato bits. You can also indulge in an aromatic cup of chai or treat yourself to their delightful Indian desserts such as the sweet and sticky gulab jamun or refreshing kulfi ice creams. With its 24/7 operation hours, this deli has rightfully earned its place as the go-to destination for satisfying comfort food cravings or relishing a hearty meal after a night out.",
+        "social": "https://www.instagram.com/punjabidelinyc/",
+        "phone": "(212) 533-3356",
+        "image": "punjabi_deli"
       },
       "geometry": {
         "coordinates": [
@@ -292,44 +192,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "63 West Street, Brooklyn, New York 11222",
-        "category": "bookstore",
-        "name": "Yoseka Stationery",
-        "nationality": "taiwanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.95917,
-          40.72853
-        ],
-        "type": "Point"
-      },
-      "id": "address.5329050984038754"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "44 Mulberry Street, New York, New York 10013",
-        "category": "bookstore",
-        "name": "Yu & Me Books",
-        "nationality": "chinese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.99955,
-          40.71496
-        ],
-        "type": "Point"
-      },
-      "id": "address.5479218497370950"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "159 Graham Avenue, Brooklyn, New York 11206",
+        "address": "159 Graham Avenue, Brooklyn, New York 11206, United States",
         "category": "restaurant",
         "name": "Win Son",
-        "nationality": "taiwanese"
+        "nationality": "taiwanese",
+        "description": "Situated in the lively neighborhood of East Williamsburg, Win Son is a restaurant beloved by many locals for their modern take on traditional Taiwanese fare. This lively spot is a haven for those craving Taiwan's timeless classics, like the iconic lu rou fan (minced pork over rice) and the sesame peanut noodles, enhanced with black sesame and smoked oyster mushrooms. The menu also offers Win Son's reinterpretations of Chinese and Taiwanese street foods such as the oyster omelette, beef rolls, and crispy scallion pancake. With energetic hip-hop tracks providing the backdrop and a small, but exceptional wine selection, Win Son creates the perfect atmosphere for rendezvous and memorable first dates. But that's not all—adjacent to the restaurant, they also have a storefront dedicated to serving takeaway pastries and coffee. This bustling space experiences a steady stream of foot traffic, as patrons eagerly snatch up favorites like the popular pork floss fan tuan, an enticing assortment of donut flavors, fluffy milk buns, breakfast sandwiches, and a variety of coffee, tea, and soy milk options. Because of their dedication to introducing and integrating Taiwanese cuisine to the neighborhood's fabric, Win Son has turned into a cherished gathering spot for the diverse East Williamsburg community.",
+        "social": "https://winsonbrooklyn.com/",
+        "phone": "(347) 457-6010",
+        "image": "win_son"
       },
       "geometry": {
         "coordinates": [
@@ -343,10 +213,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "170 Montrose Avenue, Brooklyn, New York 11206",
+        "address": "170 Montrose Avenue, Brooklyn, New York 11206, United States",
         "category": "grocery",
         "name": "Yun Hai Shop",
-        "nationality": "taiwanese"
+        "nationality": "taiwanese",
+        "description": "When China banned the import of Taiwanese pineapples back in February 2021, founder Lisa Cheng Smith of Yun Hai Shop and her partner, Lillian Lin, recognized the integral need to reduce their country's dependency on trade with China, leading them to establish their own brand of dried fruits directly sourced from independent Taiwanese farmers. As part of their Yun Hai Selection, they now offer a diverse range of dried fruits including Golden Diamond Pineapple, Irwin Mango, Pearl Guava, Green Mango, and Wax Apple. This is one of many steps that the founders have taken to promote and distribute high-quality ingredients commonly found in Taiwanese and Chinese cuisine. Yun Hai started out as a e-commerce platform back in 2019, but have recently opened their own brick and mortar East Williamsburg, Brooklyn. Since then, they have fostered many partnerships with Taiwanese brands and even became an exclusive distributor for some such as Tatung Company, known for their red and green electric rice cookers, and Yu Ding Xing, a soy sauce brewery, in North America. Through their beautifully branded products with artisanal ingredients and flavors, Yun Hai successfully tells the geographical and political story of modern Taiwan and participate in reshaping the cultural discourse surrounding food, race and identity.",
+        "social": "https://yunhai.shop/",
+        "phone": "Contact via social media",
+        "image": "yun_hai_shop"
       },
       "geometry": {
         "coordinates": [
@@ -360,10 +234,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "104 Mosco Street, New York, New York 10013",
+        "address": "104 Mosco Street, New York, New York 10013, United States",
         "category": "grocery",
         "name": "Bangkok Center Grocery",
-        "nationality": "thai"
+        "nationality": "thai",
+        "description": "Located in a small alleyway in Manhattan Chinatown, Bangkok Center Grocery is a haven for those looking to cook authentic Thai cuisine at home. While New York City boasts a plethora of Thai restaurants, sourcing Thai ingredients can be a challenge. Bangkok Center Grocery offers a one-stop shop for all your Thai culinary needs, including a diverse selection of snacks and beverages. Moreover, they stock perishables that are notoriously difficult to find, such as kaffir lime leaves, turmeric root, and galangal - ingredients that are essential to mastering Thai cuisine. The store owners are known for their friendliness and eagerness to share their expertise, so strike up a conversation with them and you may receive helpful tips to elevate your Thai cooking game.",
+        "social": "http://www.bangkokcentergrocery.com/",
+        "phone": "(212) 349-1979",
+        "image": "bangkok_center_grocery"
       },
       "geometry": {
         "coordinates": [
@@ -377,61 +255,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "163 West 10th Street, New York, New York 10014",
-        "category": "drinks",
-        "name": "Té Company",
-        "nationality": "taiwanese"
-      },
-      "geometry": {
-        "coordinates": [
-          -74.001915,
-          40.734545
-        ],
-        "type": "Point"
-      },
-      "id": "address.6211532928176066"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "204 East 13th Street, New York, New York 10003",
-        "category": "restaurant",
-        "name": "Soothr",
-        "nationality": "thai"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.98733,
-          40.7323
-        ],
-        "type": "Point"
-      },
-      "id": "address.6467350208917772"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "157 Hester Street, New York, New York 10013",
-        "category": "grocery",
-        "name": "Hong Kong Supermarket",
-        "nationality": "chinese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.99604,
-          40.71758
-        ],
-        "type": "Point"
-      },
-      "id": "address.6778059050767568"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "121 Bowery, New York, New York 10002",
+        "address": "121 Bowery, New York, New York 10002, United States",
         "category": "grocery",
         "name": "Tân Tín Hưng",
-        "nationality": "vietnamese"
+        "nationality": "vietnamese",
+        "description": "When it comes to being a Vietnamese grocer in NYC, there's one place that unquestionably deserves the title, and that place is Tan Tin Hung. Amongst numerous grocery stores in Manhattan Chinatown, Tan Tin Hung stands out with its unique offering of hard-to-find ingredients that are crucial to Vietnamese cookings, snacks, instant ramen, condiments, and beverages, all faithfully represents the diverse food options found in Vietnam. Their well-stocked aisles display a variety of soy sauce and fish sauce brands, shrimp paste jars, pho spice packets, and an extensive range of dry noodles. Their refrigerated cases receive daily shipments of fresh Vietnamese coriander, culantro, Thai mint, and rice paddy herb. Whether you're planning to cook a hearty pot of beef pho or yearning for the nolgastic taste of Vietnamese sweet and sour soup, Tan Tin Hung guarantees that all your needs will be met within a single visit to their physical store.",
+        "social": "https://www.yelp.com/biz/tan-tin-hung-supermarket-new-york",
+        "phone": "(212) 274-8811",
+        "image": "tan_tin_hung"
       },
       "geometry": {
         "coordinates": [
@@ -445,10 +276,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "564 Woodward Avenue, Queens, New York 11385",
+        "address": "564 Woodward Avenue, Queens, New York 11385, United States",
         "name": "Lichen",
         "category": "retail",
-        "nationality": "chinese"
+        "nationality": "chinese",
+        "description": "Vintage furniture aficionados and hunters in New York City are undoubtedly familiar with Lichen, a beloved destination that has gained recognition through word-of-mouth recommendations and the informative design events they host. And if you haven't yet heard of them, Lichen is a Brooklyn-based furniture store founded by Jared Blake and Ed Be. Their vision goes beyond mere commerce; Lichen strives to democratize design and knowledge, making high-end furniture accessible to all. You can trust that their inventory is priced with integrity, remaining true to the original value of each piece. In addition to their carefully curated items, Lichen offers in-house designs, such as their popular plywood coffee table that showcases their dedication to researching and actively participating in the design process. They also actively collaborates with emerging designers, cultivating a sense of community and uplifting the talents within the industry. Thanks to their unwavering values, Lichen has garnered a loyal following of customers who return time and time again to scavenge for unique furnitures and learn more about their own aesthetic preferences.",
+        "social": "https://www.lichennyc.com/",
+        "phone": "(917) 810-3378",
+        "image": "lichen"
       },
       "geometry": {
         "coordinates": [
@@ -462,10 +297,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "230 East 9th Street, New York, New York 10003",
+        "address": "230 East 9th Street, New York, New York 10003, United States",
         "category": "drinks",
         "name": "Cha-An",
-        "nationality": "japanese"
+        "nationality": "japanese",
+        "description": "Nestled in the vibrant neighborhood of East Village, Cha-An is a serene teahouse renowned for its exceptional tea selection and delicate Japanese confections. Its interior transports visitors to a traditional Japanese setting, featuring wooden floors, bamboo dividers, and low tables, which provides a perfect escape from the chaos of the city. Beyond their delicious desserts, Cha-An also offers a savory menu that features dishes such as unagi and inari over rice. The teahouse also occasionally hosts classes to teach the art of Japanese dessert-making, providing an interactive and immersive experience for those looking to delve deeper into the Japanese culinary world. For a quick snack on the go, make sure to visit Cha-An BONBON, their nearby to-go storefront. Here you'll find a delicious selection of wagashi, mochi, and parfaits that you can enjoy on the run or take back to your home or office.",
+        "social": "https://www.chaanteahouse.com/",
+        "phone": "(212) 228-8030",
+        "image": "cha_an"
       },
       "geometry": {
         "coordinates": [
@@ -479,27 +318,14 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "68 Greenpoint Avenue, Brooklyn, New York 11222",
-        "category": "restaurant",
-        "name": "Di An Di",
-        "nationality": "vietnamese"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.95826,
-          40.729635
-        ],
-        "type": "Point"
-      },
-      "id": "address.8663844949822656"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "address": "143 Front Street, Brooklyn, New York 11201",
+        "address": "143 Front Street, Brooklyn, New York 11201, United States",
         "name": "Front General Store",
         "category": "retail",
-        "nationality": "japanese"
+        "nationality": "japanese",
+        "description": "If you're looking for an immersive and unique shopping experience, Front General Store has got you covered. This Japanese-owned store is truly one of DUMBO's hidden neighborhood gems, offering a curated selection of vintage clothings and beautifully crafted home goods that celebrate the beauty found in objects from around the world. As you wander around the narrow shop, you will see that no item is unintentionally placed on the sales floor. Near the storefront is a corner designated to display homewares such as Hasami Porcelain dishwares that are made in Japan and soap dishes with colorful patterns from India. Venturing towards the center of the store and you'll be greeted with rows of neatly arranged garments from the store's very own clothing line, FGS Originals, featuring elevated basics alongside exquisite pieces from renowned Japanese designers like Issey Miyake and Yohji Yamamoto. The back of the store is a haven for military vintage enthusiasts as it's filled with aviator bags, military flight jackets, and souvenir jackets. Each item from Front General Store tells a meaningful story, making it a great destination for anyone who’s gift-hunting or searching for one-of-a-kind treasures.",
+        "social": "https://frontgeneralstore.com/",
+        "phone": "(929) 617-7317",
+        "image": "front_general_store"
       },
       "geometry": {
         "coordinates": [
@@ -513,19 +339,65 @@
     {
       "type": "Feature",
       "properties": {
-        "address": "76-03 37th Avenue, Queens, New York 11372",
+        "address": "7414 37th Rd, Queens, NY 11372",
         "category": "restaurant",
-        "name": "Lhasa Fast Food",
-        "nationality": "tibetan"
+        "name": "Angel",
+        "nationality": "indian",
+        "description": "When it comes to authentic Indian cuisine, Jackson Heights, Queens is often thought of by locals, and Angel is a must-visit destination for foodies looking to try dishes from the Punjab region. This family-owned restaurant is led by Chef Amrit Pal Singh, who previously worked at Adda in Long Island City and named the restaurant after his beloved daughter. When stepping inside Angel's unassuming ambience, you will find yourself amongst regulars indulging in their favorite dishes such as the heavenly Dahi Batata Puri, delightful wheat puffs brimming with a delicious blend of yogurt and potato, the Kale Pakora, which are crispy and flavorful chickpea fritters, the richly layered vegetable Dum Biryani, or the aromatic Lassuni Gobi, where garlic-infused cauliflower takes center stage. You will leave with your stomach heartily satisfied.",
+        "social": "https://www.instagram.com/angel_indian_restaurant/",
+        "phone": "(347) 848-0097",
+        "image": "angel"
       },
       "geometry": {
         "coordinates": [
-          -73.88963,
-          40.74931
+          -73.89088,
+          40.74722
         ],
         "type": "Point"
       },
-      "id": "address.8876390150310184"
+      "id": "b8456c0d623183f038941bc1a5ac35ff"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "70 Forsyth St, New York, NY 10002",
+        "category": "restaurant",
+        "name": "Mam NYC",
+        "nationality": "vietnamese",
+        "description": "If you're up for an adventure to indulge in some funky and pungent Northern Vietnamese cuisine, look no further than Mắm NYC in Chinatown. Once a humble pop-up, it has now become a beloved permanent establishment on a corner of Forsyth street, all thanks to the immense popularity and support from its community and friends. The main event is undoubtedly their bún đậu mắm tôm, which you probably can't find anywhere else in the city. On a bamboo tray adorned with banana leaves, the essence of bún đậu is captured in an assortment of flavors and textures including fried tofu, vermicelli, poached pork belly, blood sausage, crispy intestines, and sticky rice sausage. But what truly elevates the dish is the pièce de résistance – mắm tôm, a fermented shrimp paste with its intense aroma and deeply umami taste. The restaurant operates exclusively open from Friday to Sunday, so plan your expedition accordingly and secure your reservation for an authentic street food adventure that will transport you back to the bustling alleys of Hanoi.",
+        "social": "https://www.instagram.com/mam.nyc/",
+        "phone": "Contact via social media",
+        "image": "mam_nyc"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.993305,
+          40.717025
+        ],
+        "type": "Point"
+      },
+      "id": "e392f650818e812c1a4aa6a4f76c1aa7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "31-31 Thomson Ave, Queens, NY 11101",
+        "category": "restaurant",
+        "name": "Adda Indian Canteen",
+        "nationality": "indian",
+        "description": "Tucked away in a quiet corner of Long Island City, Adda is an unapologetically authentic Indian restaurant that takes great pride in its bold flavors, showcasing the true essence of Indian cuisine. From the moment you step inside, you'll be captivated by the vibrant energy created by the Bollywood-themed music and decor. Their concise yet impressive menu offers a variety of delectable options. One standout dish is the Lucknow Dum Biryani, a tantalizing combination of goat and rice that is baked with a delicate layer of dough. Another must-try is the Dahi Batata Puri, which are crispy puffs loaded with layers of sweet, tangy, and spicy flavors. Brace yourself for some heat because Adda doesn't shy away from spiciness, and be ready for a flavor-packed experience that will leave you coming back for more.",
+        "social": "https://www.addanyc.com/",
+        "phone": "(718) 433-3888",
+        "image": "adda_indian_canteen"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.93418,
+          40.74503
+        ],
+        "type": "Point"
+      },
+      "id": "f06bf05bf352881ee679726c2d163552"
     }
   ],
   "type": "FeatureCollection"

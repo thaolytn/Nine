@@ -12,6 +12,7 @@ struct FeatureManager {
     func loadFeatures() -> [FeatureModel]? {
         let geoJSONFileURL = Bundle.main.url(forResource: "NineFeatures", withExtension: "geojson")!
         let data = try! Data(contentsOf: geoJSONFileURL)
+
         return parseGeoJSON(data)
     }
     
@@ -25,14 +26,18 @@ struct FeatureManager {
             for feature in decodedData.features {
                 let name = feature.properties.name
                 let address = feature.properties.address
+                let phone = feature.properties.phone
                 let category = feature.properties.category
                 let nationality = feature.properties.nationality
+                let description = feature.properties.description
+                let social = feature.properties.social
+                let image = feature.properties.image
                 
-                let featureModel = FeatureModel(name: name, address: address, category: category, nationality: nationality)
+                let featureModel = FeatureModel(name: name, address: address, phone: phone, category: category, nationality: nationality, description: description, social: social, image: image)
                 features.append(featureModel)
             }
             
-            return features
+            return features.sorted(by: {$0.name < $1.name})
         } catch {
             return nil
         }

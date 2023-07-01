@@ -194,6 +194,11 @@ extension ListViewController : UITableViewDelegate {
             let descVC = segue.destination as! DescriptionViewController
             descVC.featureName = selectedFeature?.name ?? ""
             descVC.featureAddress = selectedFeature?.address ?? ""
+            descVC.featurePhone = selectedFeature?.phone ?? ""
+            descVC.featureDescription = selectedFeature?.description ?? ""
+            descVC.featureSocial = selectedFeature?.social ?? ""
+            descVC.featureImage = selectedFeature?.image ?? ""
+            
             
         }
     }

@@ -18,6 +18,10 @@ struct Feature : Codable {
 struct Property : Codable {
     let name : String
     let address : String
+    let phone : String
     let category : String
     let nationality : String
+    let description : String
+    let social : String
+    let image : String
 }

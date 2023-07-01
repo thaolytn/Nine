@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "14E03CEE-11FA-490D-B632-C4EB41E934AF_1_201_a.jpeg",
+      "filename" : "front_general_store.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "front_general_store@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "front_general_store@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
