@@ -10,6 +10,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica-Black.ttf">
+            <string>Helvetica-Black</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -124,63 +129,101 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-hp-eEe" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="934"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="988.66666666666663"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-74-INV">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="bbe-IN-ic8"/>
-                                                </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-2p-2RS">
-                                                <rect key="frame" x="10" y="320" width="373" height="94"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZNZ-2X-1QU" userLabel="VStack View">
+                                                <rect key="frame" x="15" y="20" width="363" height="211.33333333333334"/>
                                                 <subviews>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tan Tin Hung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-uD-4Uq" userLabel="Name Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="35"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNJABI GROCERY &amp; DELI" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-uD-4Uq" userLabel="Name Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="363" height="124"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="cYI-WU-EbV"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kgy-MQ-4ii"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica-Black" family="Helvetica-Black" pointSize="40"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="441 West 49th St Apt 15 New York, NY 10019 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-g6-bj7" userLabel="Address Label">
-                                                        <rect key="frame" x="0.0" y="39" width="373" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BWG-Re-fGK" userLabel="Address/Phone VStack View">
+                                                        <rect key="frame" x="0.0" y="149" width="363" height="62.333333333333343"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e2p-D1-mp3" userLabel="Address HStack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="363" height="17.333333333333332"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-k2-beL" userLabel="Address Text">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="17.333333333333332"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="rbx-Uw-egL"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="441 West 49th New York, NY 10019 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-g6-bj7" userLabel="Address Label">
+                                                                        <rect key="frame" x="100" y="0.0" width="263" height="17.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="m5m-QK-RdV" userLabel="height ≥ 20"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dde-be-E6y" userLabel="Phone HStack View">
+                                                                <rect key="frame" x="0.0" y="32.333333333333314" width="363" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-fG-Yf4" userLabel="Phone Text">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="VBQ-kQ-vOp"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqI-MW-UEn" userLabel="Phone Number">
+                                                                        <rect key="frame" x="100" y="0.0" width="263" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" title="714-579-5916">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="phoneButtonTapped:" destination="Lr7-GZ-FrT" eventType="touchUpInside" id="gL6-5w-G4s"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="wSM-Y0-g3a" userLabel="height = 20"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="1o4-LY-uPv"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="RG9-V0-XwC" userLabel="height ≥ 40"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqI-MW-UEn" userLabel="Phone Number">
-                                                        <rect key="frame" x="0.0" y="63" width="373" height="31"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Phone Number">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="phoneButtonTapped:" destination="Lr7-GZ-FrT" eventType="touchUpInside" id="gL6-5w-G4s"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="EPR-Il-5nw"/>
+                                                    <constraint firstItem="pdg-uD-4Uq" firstAttribute="leading" secondItem="ZNZ-2X-1QU" secondAttribute="leading" id="3z6-Vw-HRl"/>
+                                                    <constraint firstItem="BWG-Re-fGK" firstAttribute="leading" secondItem="ZNZ-2X-1QU" secondAttribute="leading" id="Aqt-px-icm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pdg-uD-4Uq" secondAttribute="trailing" id="Ktf-Fa-3xd"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="RfL-WQ-hQY"/>
+                                                    <constraint firstItem="pdg-uD-4Uq" firstAttribute="top" secondItem="ZNZ-2X-1QU" secondAttribute="top" id="bLH-a9-isb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BWG-Re-fGK" secondAttribute="trailing" id="zlt-Le-QIh"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-Da-gJJ" userLabel="Description Label">
-                                                <rect key="frame" x="10" y="434" width="373" height="405"/>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-Da-gJJ" userLabel="Description Label">
+                                                <rect key="frame" x="15" y="531.33333333333337" width="363" height="362.33333333333337"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="g5J-t2-10W"/>
                                                 </constraints>
-                                                <string key="text">Hudson Wilder is a Brooklyn-based, homeware brand founded by the brother-sister duo, Joyce and Conway Liao. Together, they embarked on a mission to shape the New American Design movement, designing objects that are meant for everyday use and achieving the perfect balance between form and utility. Whether you visit their DUMBO location at 142 Plymouth Street or explore their online store, you will find a display of multipurpose objects that demonstrate their practicality right in your own home. From colorful handblown glasses and beige dinner plates to an assortment of magazines and lifestyle products, Hudson Wilder offers an exquisite selection of their original designs, alongside thoughtfully chosen pieces from local and international designers, artists, and brands. Their physical store also houses a cafe with an ever-evolving menu of beverages and pastries, all served on their homeware products so that customers can experience those items firsthand. Using products from Hudson Wilder is more than just acquiring homeware—it's embracing the Art of Casual Living.</string>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <mutableString key="text">Hudson Wilder is a Brooklyn-based, homeware brand founded by the brother-sister duo, Joyce and Conway Liao. Together, they embarked on a mission to shape the New American Design movement, designing objects that are meant for everyday use and achieving the perfect balance between form and utility. Whether you visit their DUMBO location at 142 Plymouth Street or explore their online store, you will find a display of multipurpose objects that demonstrate their practicality right in your own home. From colorful handblown glasses and beige dinner plates to an assortment of magazines and lifestyle products, Hudson Wilder offers an exquisite selection of their original designs, alongside thoughtfully chosen pieces from local and international designers, artists, and brands. Their physical store also houses a cafe with an ever-evolving menu of beverages and pastries, all served on their homeware products so that customers can experience those items firsthand. Using products from Hudson Wilder is more than just acquiring homeware—it's embracing the Art of Casual Living.</mutableString>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-P6-LPe">
-                                                <rect key="frame" x="139.33333333333334" y="879" width="114.33333333333334" height="35"/>
+                                                <rect key="frame" x="139.33333333333334" y="933.66666666666674" width="114.33333333333334" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="G9u-OM-rvD"/>
                                                 </constraints>
@@ -192,22 +235,28 @@
                                                     <action selector="infoButtonTapped:" destination="Lr7-GZ-FrT" eventType="touchUpInside" id="aQb-cx-oUS"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lichen" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-74-INV">
+                                                <rect key="frame" x="0.0" y="266.33333333333331" width="393" height="230"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="230" id="bbe-IN-ic8"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QpB-P6-LPe" secondAttribute="trailing" constant="139.33000000000001" id="1Km-Ox-ucx"/>
-                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="top" secondItem="WCU-2p-2RS" secondAttribute="bottom" constant="20" id="47z-i1-TYp"/>
                                             <constraint firstItem="QpB-P6-LPe" firstAttribute="top" secondItem="u6X-Da-gJJ" secondAttribute="bottom" constant="40" id="5rg-nI-oa1"/>
-                                            <constraint firstItem="WCU-2p-2RS" firstAttribute="top" secondItem="Hnp-74-INV" secondAttribute="bottom" constant="20" id="LSy-hD-6Pf"/>
+                                            <constraint firstItem="Hnp-74-INV" firstAttribute="top" secondItem="ZNZ-2X-1QU" secondAttribute="bottom" constant="35" id="Qqm-1b-DEV"/>
                                             <constraint firstItem="QpB-P6-LPe" firstAttribute="leading" relation="lessThanOrEqual" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="139.33000000000001" id="Rtl-gM-7bQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="Hnp-74-INV" secondAttribute="trailing" id="Spe-Gx-SvZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="u6X-Da-gJJ" secondAttribute="trailing" constant="10" id="Vb7-On-6ay"/>
-                                            <constraint firstItem="WCU-2p-2RS" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="10" id="VtI-Nv-a8j"/>
+                                            <constraint firstAttribute="trailing" secondItem="u6X-Da-gJJ" secondAttribute="trailing" constant="15" id="Vb7-On-6ay"/>
                                             <constraint firstAttribute="bottom" secondItem="QpB-P6-LPe" secondAttribute="bottom" constant="20" id="YeN-eG-ulb"/>
-                                            <constraint firstItem="Hnp-74-INV" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" id="jbA-GH-7pb"/>
-                                            <constraint firstAttribute="trailing" secondItem="WCU-2p-2RS" secondAttribute="trailing" constant="10" id="kGa-Nw-qeu"/>
-                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="10" id="oh7-Px-iz5"/>
-                                            <constraint firstItem="Hnp-74-INV" firstAttribute="top" secondItem="SHR-hp-eEe" secondAttribute="top" id="qFp-Ph-uCa"/>
+                                            <constraint firstItem="Hnp-74-INV" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" id="iy1-75-aal"/>
+                                            <constraint firstItem="ZNZ-2X-1QU" firstAttribute="top" secondItem="SHR-hp-eEe" secondAttribute="top" constant="20" id="jhv-ep-zLk"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZNZ-2X-1QU" secondAttribute="trailing" constant="15" id="mhY-oQ-LKL"/>
+                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="top" secondItem="Hnp-74-INV" secondAttribute="bottom" constant="35" id="nOv-ay-HHr"/>
+                                            <constraint firstItem="u6X-Da-gJJ" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="15" id="oh7-Px-iz5"/>
+                                            <constraint firstItem="ZNZ-2X-1QU" firstAttribute="leading" secondItem="SHR-hp-eEe" secondAttribute="leading" constant="15" id="uIU-Kj-jOv"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hnp-74-INV" secondAttribute="trailing" id="zYC-Ed-Dd5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -355,6 +404,7 @@
         <segue reference="Cpz-fE-6A5"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="lichen" width="500" height="400.33334350585938"/>
         <image name="nine-flower-about-page" width="381" height="381"/>
         <image name="report-bug-button" width="221" height="48"/>
         <image name="support-us-button" width="221" height="48"/>

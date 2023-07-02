@@ -9,6 +9,11 @@ import UIKit
 import MapboxMaps
 import MapboxCoreMaps
 
+class LargeTapAreaButton : UIButton {
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        return bounds.insetBy(dx: -10, dy: -10).contains(point)
+    }
+}
 
 class MapViewController: UIViewController {
 
@@ -70,10 +75,11 @@ class MapViewController: UIViewController {
         
         // Programmatically add About button
         let aboutImage = UIImage(named: "nine-flower")
-        let aboutButton = UIButton(type: .custom)
+        let aboutButton = LargeTapAreaButton(type: .custom)
+        //let aboutButton = UIButton(type: .custom)
         aboutButton.frame = CGRect(x: 0, y: 20, width: 110, height: 110)
         aboutButton.setImage(aboutImage, for: .normal)
-        aboutButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+        //aboutButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
         aboutButton.imageView?.isUserInteractionEnabled = false
         aboutButton.addTarget(self, action: #selector(handleAboutButtonTap(_:)), for: .touchUpInside)
         view.addSubview(aboutButton)
@@ -81,10 +87,11 @@ class MapViewController: UIViewController {
         
         // Programmatically add List button
         let listImage = UIImage(named: "list-button")
-        let listButton = UIButton(type: .custom)
+        //let listButton = UIButton(type: .custom)
+        let listButton = LargeTapAreaButton(type: .custom)
         listButton.frame = CGRect(x: 270, y: 50, width: 120, height: 60)
         listButton.setImage(listImage, for: .normal)
-        listButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+        //listButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
         listButton.imageView?.isUserInteractionEnabled = false
         listButton.addTarget(self, action: #selector(handleListButtonTap(_:)), for: .touchUpInside)
         view.addSubview(listButton)

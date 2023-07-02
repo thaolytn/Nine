@@ -24,6 +24,7 @@
 		097D6B4A29B2CE79007B359D /* FeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097D6B4829B2CE79007B359D /* FeatureCell.xib */; };
 		097D6B5029C3B603007B359D /* NationalityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097D6B4F29C3B603007B359D /* NationalityCollectionViewCell.swift */; };
 		097D6B5229C97BD8007B359D /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097D6B5129C97BD8007B359D /* DescriptionViewController.swift */; };
+		09C84C572A513F100028343C /* Helvetica-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09C84C562A513F100028343C /* Helvetica-Black.ttf */; };
 		AFF4D071CFABE5DD50899647 /* Pods_Nine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6964FD2331C2BB444A6616E /* Pods_Nine.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		097D6B4829B2CE79007B359D /* FeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatureCell.xib; sourceTree = "<group>"; };
 		097D6B4F29C3B603007B359D /* NationalityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalityCollectionViewCell.swift; sourceTree = "<group>"; };
 		097D6B5129C97BD8007B359D /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		09C84C562A513F100028343C /* Helvetica-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Helvetica-Black.ttf"; path = "../../../../../Downloads/Helvetica-Black Black/Helvetica-Black.ttf"; sourceTree = "<group>"; };
 		571A2C4A2254B90C7414EE9D /* Pods-Nine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nine.release.xcconfig"; path = "Target Support Files/Pods-Nine/Pods-Nine.release.xcconfig"; sourceTree = "<group>"; };
 		E6964FD2331C2BB444A6616E /* Pods_Nine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE888812E80C7C41463A6D43 /* Pods-Nine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nine.debug.xcconfig"; path = "Target Support Files/Pods-Nine/Pods-Nine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				097D6B2E29AD3AE1007B359D /* Controller */,
 				097D6B2F29AD3AF5007B359D /* View */,
 				097D6B2329AD38E4007B359D /* Assets.xcassets */,
+				09FFF6FA2A513C1F0015AD7E /* Fonts */,
 				097D6B2529AD38E4007B359D /* LaunchScreen.storyboard */,
 				09603DE129F7A1E000D91804 /* NineFeatures.geojson */,
 				097D6B2829AD38E4007B359D /* Info.plist */,
@@ -129,6 +132,14 @@
 				097D6B4529B2BC6F007B359D /* Nationality.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09FFF6FA2A513C1F0015AD7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09C84C562A513F100028343C /* Helvetica-Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		641F9EFD42202B495F73B6D0 /* Pods */ = {
@@ -208,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C84C572A513F100028343C /* Helvetica-Black.ttf in Resources */,
 				097D6B2729AD38E4007B359D /* LaunchScreen.storyboard in Resources */,
 				097D6B2429AD38E4007B359D /* Assets.xcassets in Resources */,
 				09603DE229F7A1E000D91804 /* NineFeatures.geojson in Resources */,
