@@ -10,6 +10,8 @@ import MapboxMaps
 
 class AboutViewController: UIViewController {
     
+    @IBOutlet weak var submitButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,5 +20,14 @@ class AboutViewController: UIViewController {
         navigationController?.navigationBar.backIndicatorImage = backArrowImage
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backArrowImage
         navigationController?.navigationBar.tintColor = .white
+        
+        submitButton.layer.borderWidth = 1.0
+        submitButton.layer.borderColor = UIColor(white: 1.0, alpha: CGFloat(0.7)).cgColor
+        submitButton.layer.cornerRadius = 21
+    }
+    
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+        guard let docURL = URL(string: "https://forms.gle/ugvPzGKTcvCrdsn7A") else {return}
+        UIApplication.shared.open(docURL, options: [:] )
     }
 }

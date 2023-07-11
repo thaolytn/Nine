@@ -70,7 +70,10 @@ class DescriptionViewController: UIViewController {
     
     @IBAction func phoneButtonTapped(_ sender: Any) {
         let phoneNumber = featurePhone.replacingOccurrences(of: " |\\(|\\)|-", with: "", options: [.regularExpression])
-        print(phoneNumber)
+        
+        if Int(phoneNumber) == nil {
+            return
+        }
         guard let phoneURL = URL(string: "telprompt://\(phoneNumber)"), UIApplication.shared.canOpenURL(phoneURL) else {
             print("Failed to call")
             return
