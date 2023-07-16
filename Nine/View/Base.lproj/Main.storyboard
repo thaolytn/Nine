@@ -46,17 +46,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mf8-a1-daO">
-                                <rect key="frame" x="0.0" y="104" width="430" height="754"/>
+                                <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nine-flower-about-page" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-PK-J9W">
-                                        <rect key="frame" x="151" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="115" y="0.0" width="200" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="128" id="jmi-4e-Pn1"/>
-                                            <constraint firstAttribute="height" constant="128" id="oWm-KD-Nt3"/>
+                                            <constraint firstAttribute="width" constant="200" id="jmi-4e-Pn1"/>
+                                            <constraint firstAttribute="height" constant="200" id="oWm-KD-Nt3"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9F-BM-cU0" userLabel="Label View">
-                                        <rect key="frame" x="0.0" y="134" width="430" height="569"/>
+                                        <rect key="frame" x="0.0" y="206" width="430" height="538"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-fg-lfq">
                                                 <rect key="frame" x="15" y="30" width="400" height="294.66666666666669"/>
@@ -73,7 +73,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTx-Bg-1fg">
-                                        <rect key="frame" x="85" y="709" width="260" height="45"/>
+                                        <rect key="frame" x="85" y="750" width="260" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="260" id="4JV-NT-iXW"/>
                                             <constraint firstAttribute="height" constant="45" id="bD4-f8-tQd"/>
@@ -99,8 +99,8 @@
                         <color key="backgroundColor" name="NineGrey"/>
                         <constraints>
                             <constraint firstItem="Mf8-a1-daO" firstAttribute="leading" secondItem="QhR-WL-zjE" secondAttribute="leading" id="8Ik-Q5-GCn"/>
-                            <constraint firstItem="Mf8-a1-daO" firstAttribute="top" secondItem="QhR-WL-zjE" secondAttribute="top" constant="1" id="pcH-bO-9yh"/>
-                            <constraint firstItem="Mf8-a1-daO" firstAttribute="bottom" secondItem="QhR-WL-zjE" secondAttribute="bottom" constant="-40" id="qfU-2Z-uHo"/>
+                            <constraint firstItem="QhR-WL-zjE" firstAttribute="bottom" secondItem="Mf8-a1-daO" secondAttribute="bottom" id="GXk-mN-baW"/>
+                            <constraint firstItem="Mf8-a1-daO" firstAttribute="top" secondItem="QhR-WL-zjE" secondAttribute="top" id="ht4-zv-NCY"/>
                             <constraint firstItem="Mf8-a1-daO" firstAttribute="trailing" secondItem="QhR-WL-zjE" secondAttribute="trailing" id="sCI-mh-MxF"/>
                         </constraints>
                     </view>
@@ -401,7 +401,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="lichen" width="500" height="400.33334350585938"/>
-        <image name="nine-flower-about-page" width="127" height="127"/>
+        <image name="nine-flower-about-page" width="381" height="381"/>
         <namedColor name="NineGrey">
             <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

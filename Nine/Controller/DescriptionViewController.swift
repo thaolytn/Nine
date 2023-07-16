@@ -38,16 +38,15 @@ class DescriptionViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .black
         
         
-        nameLabel.text = featureName // featureName.uppercased()
+        nameLabel.text = featureName 
         addressLabel.text = featureAddress
         descriptionLabel.text = featureDescription
-        imageView.image = UIImage(named: featureImage)
+        imageView.image = UIImage(named: "feature-photos/\(featureImage)")
+       
         
         let attributeString = NSMutableAttributedString(string: featurePhone, attributes: phoneButtonAttributes)
         phoneButton.setAttributedTitle(attributeString, for: .normal)
        
-
-        
     }
     
   
@@ -75,7 +74,6 @@ class DescriptionViewController: UIViewController {
             return
         }
         guard let phoneURL = URL(string: "telprompt://\(phoneNumber)"), UIApplication.shared.canOpenURL(phoneURL) else {
-            print("Failed to call")
             return
         }
         UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)

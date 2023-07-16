@@ -71,17 +71,16 @@ class MapViewController: UIViewController {
         
         // Programmatically add About button
         let aboutImage = UIImage(named: "about-button")
-        //let aboutButton = LargeTapAreaButton(type: .custom)
         let aboutButton = UIButton(type: .custom)
-        aboutButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        aboutButton.frame = CGRect(x: 0, y: 0, width: 45, height: 45)
         aboutButton.setImage(aboutImage, for: .normal)
+        aboutButton.imageView?.contentMode = .scaleAspectFit
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: aboutButton)
         aboutButton.addTarget(self, action: #selector(handleAboutButtonTap(_:)), for: .touchUpInside)
         
 
         
         // Programmatically add List button
-        
         let listImage = UIImage(named: "list-button")
         let listButton = UIButton(type: .custom)
         listButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
@@ -102,15 +101,11 @@ class MapViewController: UIViewController {
     @objc private func handleFeatureTap(_ sender: UITapGestureRecognizer) {
         let point = sender.location(in: mapView)
         let queryOptions = RenderedQueryOptions(layerIds: [Constants.LAYER_ID], filter: nil)
-        // let queryOptions = RenderedQueryOptions(layerIds: ["nine-features"], filter: nil)
         
         mapView.mapboxMap.queryRenderedFeatures(with: point, options: queryOptions) { result in
             if case let .success(queriedFeatures) = result, let feature = queriedFeatures.first?.feature {
-                print("Feature Tapped in Map")
                 self.currentFeature = feature
                 self.performSegue(withIdentifier: "goToDescription", sender: self)
-            } else {
-                print("Random Location Tapped in Map")
             }
         }
                 
@@ -153,12 +148,10 @@ class MapViewController: UIViewController {
     //MARK: - Segue Methods
     
     @objc private func handleAboutButtonTap(_ sender: UIButton!) {
-        print("About button tapped")
         performSegue(withIdentifier: "goToAbout", sender: self)
     }
 
     @objc private func handleListButtonTap(_ sender: UIButton) {
-        print("List button tapped")
         performSegue(withIdentifier: "goToList", sender: self)
     }
 

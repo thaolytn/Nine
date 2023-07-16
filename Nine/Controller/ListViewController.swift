@@ -177,7 +177,6 @@ extension ListViewController : UITableViewDataSource {
 extension ListViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Feature Tapped in List")
         performSegue(withIdentifier: "goToDescription", sender: self)
     }
     
