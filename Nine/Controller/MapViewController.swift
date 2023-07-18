@@ -71,22 +71,19 @@ class MapViewController: UIViewController {
         
         // Programmatically add About button
         let aboutImage = UIImage(named: "about-button")
-        let aboutButton = UIButton(type: .custom)
-        aboutButton.frame = CGRect(x: 0, y: 0, width: 45, height: 45)
-        aboutButton.setImage(aboutImage, for: .normal)
-        aboutButton.imageView?.contentMode = .scaleAspectFit
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: aboutButton)
-        aboutButton.addTarget(self, action: #selector(handleAboutButtonTap(_:)), for: .touchUpInside)
+        let aboutButton = UIBarButtonItem(title: "About", style: .done, target: self, action: #selector(handleAboutButtonTap(_:)))
+        aboutButton.image = aboutImage
+        aboutButton.imageInsets = UIEdgeInsets(top: 0, left: -15, bottom: 0, right: 0)
+        self.navigationItem.leftBarButtonItem = aboutButton
+        self.navigationItem.leftBarButtonItem?.tintColor = .white
         
-
         
         // Programmatically add List button
         let listImage = UIImage(named: "list-button")
-        let listButton = UIButton(type: .custom)
-        listButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        listButton.setImage(listImage, for: .normal)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: listButton)
-        listButton.addTarget(self, action: #selector(handleListButtonTap(_:)), for: .touchUpInside)
+        let listButton = UIBarButtonItem(title: "List", style: .done, target: self, action: #selector(handleListButtonTap(_:)))
+        listButton.image = listImage
+        self.navigationItem.rightBarButtonItem = listButton
+        self.navigationItem.rightBarButtonItem?.tintColor = .white
 
         
         mapView.mapboxMap.onNext(event: .mapLoaded) { _ in
