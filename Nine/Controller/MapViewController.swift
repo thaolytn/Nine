@@ -136,7 +136,10 @@ class MapViewController: UIViewController {
         symbolLayer.textColor = .constant(.init(UIColor.white))
         symbolLayer.textAnchor = .constant(.top)
         
-        try! style.addLayer(symbolLayer)
+        if style.layerExists(withId: Constants.LAYER_ID) == false {
+            try! style.addLayer(symbolLayer)
+        }
+       
         
     }
 
