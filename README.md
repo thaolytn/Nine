@@ -2,10 +2,10 @@
 
 ## Screenshots
 <p align="center">
-  <img src="https://github.com/thaolytn/Nine/assets/20148851/2c5cc897-4d55-4b75-9541-e4d3395fba5b" width="200"/>
-  <img src="https://github.com/thaolytn/Nine/assets/20148851/57e2e2bd-59a7-4443-9015-4ac54b01ac0c" width="200"/>
-  <img src="https://github.com/thaolytn/Nine/assets/20148851/2f02e058-179d-49ac-9d3e-c5cf60e821c2" width="200"/>
-  <img src="https://github.com/thaolytn/Nine/assets/20148851/faa30fc7-0f2b-4951-a9a4-5d9cfbd1f4ba" width="200"/>
+  <img src="https://github.com/thaolytn/Nine/assets/20148851/53080758-e25d-4db1-928e-cdab150cb17e" width="200"/>
+  <img src="https://github.com/thaolytn/Nine/assets/20148851/1a019360-b4d9-4de3-a33c-3ef89b597a3d" width="200"/>
+  <img src="https://github.com/thaolytn/Nine/assets/20148851/71633863-064f-4ad6-938e-2cbe708ec73d" width="200"/>
+  <img src="https://github.com/thaolytn/Nine/assets/20148851/27ede48c-c600-44a0-b2ae-fb558c0c3e6f" width="200"/>
 </p>
 
 ## About
