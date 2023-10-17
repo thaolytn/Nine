@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 @main 
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().barTintColor = .white
         UITabBar.appearance().barTintColor = .white
+        
+        GMSPlacesClient.provideAPIKey("AIzaSyD6l36NEvRGW6f-62izISXDukr7DE0Vlh8")
         
         return true
     }
