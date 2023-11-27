@@ -1,4 +1,4 @@
-# Nine – AAPI Guide to NYC 🗽
+# Nine NYC 🗽
 
 ## Screenshots
 <p align="center">
